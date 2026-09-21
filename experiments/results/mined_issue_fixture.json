@@ -1,0 +1,3719 @@
+{
+  "candidate_count_per_issue": [
+    4,
+    4,
+    4,
+    4,
+    2,
+    2,
+    2
+  ],
+  "diagnostic_records": [
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_comparison_bounds_without_not_equal"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_comparison_bounds_without_not_equal"
+      ],
+      "issue_id": "packaging_788_prerelease",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 0.0,
+      "original_official_only": 1.0,
+      "patch_coverage_choice": "overbroad_all_ordered_ops",
+      "patch_coverage_missed_d_solved": 1.0,
+      "patch_coverage_success": 0.0,
+      "rescue_candidates": [
+        "comparison_bounds_without_not_equal"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "comparison_bounds_without_not_equal"
+      ],
+      "task_id": "packaging_788_prerelease_property"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_comparison_bounds_without_not_equal"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_comparison_bounds_without_not_equal"
+      ],
+      "issue_id": "packaging_788_prerelease",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "overbroad_all_ordered_ops",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "comparison_bounds_without_not_equal"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "comparison_bounds_without_not_equal"
+      ],
+      "task_id": "packaging_788_comparison_contains"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_comparison_bounds_without_not_equal"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_comparison_bounds_without_not_equal"
+      ],
+      "issue_id": "packaging_788_prerelease",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "overbroad_all_ordered_ops",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "comparison_bounds_without_not_equal"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "comparison_bounds_without_not_equal"
+      ],
+      "task_id": "packaging_788_specifier_filter"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_iterable_compatible_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_iterable_compatible_patch"
+      ],
+      "issue_id": "packaging_777_iterable_specifiers",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_777_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [],
+      "task_id": "packaging_777_iterable_set_equivalence"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_iterable_compatible_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_iterable_compatible_patch"
+      ],
+      "issue_id": "packaging_777_iterable_specifiers",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_777_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [],
+      "task_id": "packaging_777_iterable_membership"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_iterable_compatible_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_iterable_compatible_patch"
+      ],
+      "issue_id": "packaging_777_iterable_specifiers",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_777_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [],
+      "task_id": "packaging_777_string_constructor_still_works"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_ascii_all_release_words_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_ascii_all_release_words_patch"
+      ],
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1384_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [],
+      "task_id": "packaging_1384_preview_uses_ascii_scope"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_ascii_all_release_words_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_ascii_all_release_words_patch"
+      ],
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1384_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [],
+      "task_id": "packaging_1384_post_uses_ascii_scope"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_ascii_all_release_words_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_ascii_all_release_words_patch"
+      ],
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1384_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [],
+      "task_id": "packaging_1384_valid_compatible_specifier_still_parses"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_all_empty_platforms_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_all_empty_platforms_patch"
+      ],
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1360_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "all_empty_platforms_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "all_empty_platforms_patch"
+      ],
+      "task_id": "packaging_1360_cpython_empty_platforms"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_all_empty_platforms_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_all_empty_platforms_patch"
+      ],
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1360_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "all_empty_platforms_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "all_empty_platforms_patch"
+      ],
+      "task_id": "packaging_1360_generic_empty_platforms"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_all_empty_platforms_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_all_empty_platforms_patch"
+      ],
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 0.0,
+      "original_official_only": 1.0,
+      "patch_coverage_choice": "official_pr_1360_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "all_empty_platforms_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "all_empty_platforms_patch"
+      ],
+      "task_id": "packaging_1360_compatible_empty_platforms"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_strict_end_z_anchor_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_strict_end_z_anchor_patch"
+      ],
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 0.0,
+      "original_official_only": 1.0,
+      "patch_coverage_choice": "official_pr_1345_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "strict_end_z_anchor_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "strict_end_z_anchor_patch"
+      ],
+      "task_id": "packaging_1345_requirement_rejects_newline"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_strict_end_z_anchor_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_strict_end_z_anchor_patch"
+      ],
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 0.0,
+      "original_official_only": 1.0,
+      "patch_coverage_choice": "official_pr_1345_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "strict_end_z_anchor_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "strict_end_z_anchor_patch"
+      ],
+      "task_id": "packaging_1345_marker_rejects_newline"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_strict_end_z_anchor_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_strict_end_z_anchor_patch"
+      ],
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1345_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "strict_end_z_anchor_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "strict_end_z_anchor_patch"
+      ],
+      "task_id": "packaging_1345_horizontal_whitespace_still_allowed"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_invalid_specifier_wrapper_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_invalid_specifier_wrapper_patch"
+      ],
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 0.0,
+      "original_official_only": 1.0,
+      "patch_coverage_choice": "official_pr_1332_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "invalid_specifier_wrapper_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "invalid_specifier_wrapper_patch"
+      ],
+      "task_id": "packaging_1332_malformed_specifier_is_invalid_requirement"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_invalid_specifier_wrapper_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_invalid_specifier_wrapper_patch"
+      ],
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1332_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "invalid_specifier_wrapper_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "invalid_specifier_wrapper_patch"
+      ],
+      "task_id": "packaging_1332_valid_requirement_still_parses"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_invalid_specifier_wrapper_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_invalid_specifier_wrapper_patch"
+      ],
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1332_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "invalid_specifier_wrapper_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "invalid_specifier_wrapper_patch"
+      ],
+      "task_id": "packaging_1332_url_requirement_still_parses"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_wheel_name_strict_end_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_wheel_name_strict_end_patch"
+      ],
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 0.0,
+      "original_official_only": 1.0,
+      "patch_coverage_choice": "official_pr_1341_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "wheel_name_strict_end_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "wheel_name_strict_end_patch"
+      ],
+      "task_id": "packaging_1341_rejects_newline_wheel_name"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_wheel_name_strict_end_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_wheel_name_strict_end_patch"
+      ],
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1341_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "wheel_name_strict_end_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "wheel_name_strict_end_patch"
+      ],
+      "task_id": "packaging_1341_valid_wheel_still_parses"
+    },
+    {
+      "all_candidate_coverage": 1.0,
+      "generated_candidates": [
+        "generated_wheel_name_strict_end_patch"
+      ],
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "generated_successes": [
+        "generated_wheel_name_strict_end_patch"
+      ],
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "official_candidate_success": 1.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_choice": "official_pr_1341_patch",
+      "patch_coverage_missed_d_solved": 0.0,
+      "patch_coverage_success": 1.0,
+      "rescue_candidates": [
+        "wheel_name_strict_end_patch"
+      ],
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "rescue_successes": [
+        "wheel_name_strict_end_patch"
+      ],
+      "task_id": "packaging_1341_rejects_crlf_wheel_name"
+    }
+  ],
+  "fixtures": [
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "candidates": 4,
+      "generated_candidates": [
+        "generated_comparison_bounds_without_not_equal"
+      ],
+      "generated_choice": "generated_comparison_bounds_without_not_equal",
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_checks": 3,
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_choice": "overbroad_all_ordered_ops",
+      "patch_coverage_score": [
+        2,
+        1,
+        670
+      ],
+      "pr_patch_sha256": "6b24933f8f58fe13f8e9010d0accb50718ab07c1e537e018c94b590ac5713e59",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "candidates": 4,
+      "generated_candidates": [
+        "generated_iterable_compatible_patch"
+      ],
+      "generated_choice": "generated_iterable_compatible_patch",
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_checks": 3,
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_choice": "official_pr_777_patch",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "pr_patch_sha256": "362542e845fbe18ee032395d2ae47fda85ff8e75e302589d7d1599af7ab262ea",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "candidates": 4,
+      "generated_candidates": [
+        "generated_ascii_all_release_words_patch"
+      ],
+      "generated_choice": "generated_ascii_all_release_words_patch",
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_checks": 3,
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_choice": "official_pr_1384_patch",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "pr_patch_sha256": "7b6332ab376250d0adca518a6a0d763391b95c5bb761e2e6d1b57742d4df7afd",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "candidates": 4,
+      "generated_candidates": [
+        "generated_all_empty_platforms_patch"
+      ],
+      "generated_choice": "generated_all_empty_platforms_patch",
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_checks": 3,
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_choice": "official_pr_1360_patch",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "pr_patch_sha256": "6a2a988950f04242e82f78f5cb82522b1ef50e2e206072dd2e8d27d38f94feb5",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "candidates": 2,
+      "generated_candidates": [
+        "generated_strict_end_z_anchor_patch"
+      ],
+      "generated_choice": "generated_strict_end_z_anchor_patch",
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_checks": 3,
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_choice": "official_pr_1345_patch",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "pr_patch_sha256": "89645aa1db37d4ca75f74f86ef5c1b05e35709a63c6359f99ee1bc0294137098",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "candidates": 2,
+      "generated_candidates": [
+        "generated_invalid_specifier_wrapper_patch"
+      ],
+      "generated_choice": "generated_invalid_specifier_wrapper_patch",
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_checks": 3,
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_choice": "official_pr_1332_patch",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "pr_patch_sha256": "2903009d22c4f35f6a5ad4c55a0718aa90ff23cedd1608696cef9c2ac8b20423",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "candidates": 2,
+      "generated_candidates": [
+        "generated_wheel_name_strict_end_patch"
+      ],
+      "generated_choice": "generated_wheel_name_strict_end_patch",
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_checks": 3,
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_choice": "official_pr_1341_patch",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "pr_patch_sha256": "24960f0c5fd49e5a810717149fc3bca89a20b84d91df0f36bc53bbd488d9403a",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341"
+    }
+  ],
+  "issue_count": 7,
+  "issue_diagnostics": {
+    "packaging_1332_invalid_requirement_wrapper": {
+      "all_candidate_coverage": 1.0,
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "original_nonofficial_candidate_coverage": 0.6666666666666666,
+      "original_official_only": 0.3333333333333333,
+      "patch_coverage_missed_d_solved": 0.0,
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "tasks": 3
+    },
+    "packaging_1341_wheel_name_newline": {
+      "all_candidate_coverage": 1.0,
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "original_nonofficial_candidate_coverage": 0.6666666666666666,
+      "original_official_only": 0.3333333333333333,
+      "patch_coverage_missed_d_solved": 0.0,
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "tasks": 3
+    },
+    "packaging_1345_strict_end_anchor": {
+      "all_candidate_coverage": 1.0,
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "original_nonofficial_candidate_coverage": 0.3333333333333333,
+      "original_official_only": 0.6666666666666666,
+      "patch_coverage_missed_d_solved": 0.0,
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "tasks": 3
+    },
+    "packaging_1360_empty_platform_iterables": {
+      "all_candidate_coverage": 1.0,
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "original_nonofficial_candidate_coverage": 0.6666666666666666,
+      "original_official_only": 0.3333333333333333,
+      "patch_coverage_missed_d_solved": 0.0,
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "tasks": 3
+    },
+    "packaging_1384_ascii_specifier_words": {
+      "all_candidate_coverage": 1.0,
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_missed_d_solved": 0.0,
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "tasks": 3
+    },
+    "packaging_777_iterable_specifiers": {
+      "all_candidate_coverage": 1.0,
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "original_nonofficial_candidate_coverage": 1.0,
+      "original_official_only": 0.0,
+      "patch_coverage_missed_d_solved": 0.0,
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "tasks": 3
+    },
+    "packaging_788_prerelease": {
+      "all_candidate_coverage": 1.0,
+      "generated_nonofficial_candidate_coverage": 1.0,
+      "generated_official_only": 0.0,
+      "original_nonofficial_candidate_coverage": 0.6666666666666666,
+      "original_official_only": 0.3333333333333333,
+      "patch_coverage_missed_d_solved": 0.3333333333333333,
+      "rescue_nonofficial_candidate_coverage": 1.0,
+      "rescue_official_only": 0.0,
+      "tasks": 3
+    }
+  },
+  "issue_summary": {
+    "packaging_1332_invalid_requirement_wrapper": {
+      "A_score_order": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "B_rho0_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "C_credal_generic": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "D_credal_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "E_patch_coverage": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "F_source_pattern_generated": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      }
+    },
+    "packaging_1341_wheel_name_newline": {
+      "A_score_order": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "B_rho0_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "C_credal_generic": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "D_credal_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "E_patch_coverage": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "F_source_pattern_generated": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      }
+    },
+    "packaging_1345_strict_end_anchor": {
+      "A_score_order": {
+        "selection_loss": 0.6666666666666666,
+        "success_rate": 0.3333333333333333,
+        "tasks": 3
+      },
+      "B_rho0_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "C_credal_generic": {
+        "selection_loss": 0.6666666666666666,
+        "success_rate": 0.3333333333333333,
+        "tasks": 3
+      },
+      "D_credal_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "E_patch_coverage": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "F_source_pattern_generated": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      }
+    },
+    "packaging_1360_empty_platform_iterables": {
+      "A_score_order": {
+        "selection_loss": 0.6666666666666666,
+        "success_rate": 0.3333333333333333,
+        "tasks": 3
+      },
+      "B_rho0_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "C_credal_generic": {
+        "selection_loss": 1.0,
+        "success_rate": 0.0,
+        "tasks": 3
+      },
+      "D_credal_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "E_patch_coverage": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "F_source_pattern_generated": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      }
+    },
+    "packaging_1384_ascii_specifier_words": {
+      "A_score_order": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "B_rho0_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "C_credal_generic": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "D_credal_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "E_patch_coverage": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "F_source_pattern_generated": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      }
+    },
+    "packaging_777_iterable_specifiers": {
+      "A_score_order": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "B_rho0_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "C_credal_generic": {
+        "selection_loss": 0.6666666666666666,
+        "success_rate": 0.3333333333333333,
+        "tasks": 3
+      },
+      "D_credal_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "E_patch_coverage": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "F_source_pattern_generated": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      }
+    },
+    "packaging_788_prerelease": {
+      "A_score_order": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "B_rho0_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "C_credal_generic": {
+        "selection_loss": 1.0,
+        "success_rate": 0.0,
+        "tasks": 3
+      },
+      "D_credal_decision": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      },
+      "E_patch_coverage": {
+        "selection_loss": 0.3333333333333333,
+        "success_rate": 0.6666666666666666,
+        "tasks": 3
+      },
+      "F_source_pattern_generated": {
+        "selection_loss": 0.0,
+        "success_rate": 1.0,
+        "tasks": 3
+      }
+    }
+  },
+  "oracle_summary": {
+    "all_candidate_coverage": 1.0,
+    "generated_nonofficial_candidate_coverage": 1.0,
+    "generated_official_only": 0.0,
+    "original_nonofficial_candidate_coverage": 0.7142857142857143,
+    "original_official_only": 0.2857142857142857,
+    "patch_coverage_missed_d_solved": 0.047619047619047616,
+    "rescue_nonofficial_candidate_coverage": 1.0,
+    "rescue_official_only": 0.0
+  },
+  "policies": [
+    "A_score_order",
+    "B_rho0_decision",
+    "C_credal_generic",
+    "D_credal_decision",
+    "E_patch_coverage",
+    "F_source_pattern_generated"
+  ],
+  "python_bin": "/Users/duyimin/paper_work/lambda/external/agentdojo_env/bin/python",
+  "records": [
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "overbroad_all_ordered_ops",
+      "cost": 0.12,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "Specifier.prereleases for <, >, and !=",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        670
+      ],
+      "patch_hash": "79082736bf6eae39",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_788_prerelease_property"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "official_pr_794_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "Specifier.prereleases for <, >, and !=",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_prerelease_property"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "Specifier.prereleases for <, >, and !=",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_788_prerelease_property"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "official_pr_794_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "Specifier.prereleases for <, >, and !=",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_prerelease_property"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "overbroad_all_ordered_ops",
+      "cost": 0.14,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "Specifier.prereleases for <, >, and !=",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        670
+      ],
+      "patch_hash": "79082736bf6eae39",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_788_prerelease_property"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "generated_comparison_bounds_without_not_equal",
+      "cost": 0.24,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "Specifier.prereleases for <, >, and !=",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_prerelease_property"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "overbroad_all_ordered_ops",
+      "cost": 0.12,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "comparison operators admit explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        670
+      ],
+      "patch_hash": "79082736bf6eae39",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_comparison_contains"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "official_pr_794_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "comparison operators admit explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_comparison_contains"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "comparison operators admit explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_788_comparison_contains"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "official_pr_794_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "comparison operators admit explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_comparison_contains"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "overbroad_all_ordered_ops",
+      "cost": 0.14,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "comparison operators admit explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        670
+      ],
+      "patch_hash": "79082736bf6eae39",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_comparison_contains"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "generated_comparison_bounds_without_not_equal",
+      "cost": 0.24,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "comparison operators admit explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_comparison_contains"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "overbroad_all_ordered_ops",
+      "cost": 0.12,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "SpecifierSet.filter follows explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        670
+      ],
+      "patch_hash": "79082736bf6eae39",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_specifier_filter"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "official_pr_794_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "SpecifierSet.filter follows explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_specifier_filter"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "SpecifierSet.filter follows explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_788_specifier_filter"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "official_pr_794_patch",
+      "cost": 0.17,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "SpecifierSet.filter follows explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_specifier_filter"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "overbroad_all_ordered_ops",
+      "cost": 0.14,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "SpecifierSet.filter follows explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        670
+      ],
+      "patch_hash": "79082736bf6eae39",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_specifier_filter"
+    },
+    {
+      "base_sha": "a716c52b5f3ca9b4a512f538b80ced8ee01b2775",
+      "chosen": "generated_comparison_bounds_without_not_equal",
+      "cost": 0.24,
+      "head_sha": "dc39fcac9cfbd647a8104f03bb212ed7fa50c69a",
+      "hidden_check": "SpecifierSet.filter follows explicit pre-release bounds",
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "patch_coverage_score": [
+        2,
+        1,
+        664
+      ],
+      "patch_hash": "0a790d2bb1c766a5",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/794.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/794",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_788_specifier_filter"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "stringify_iterable_patch",
+      "cost": 0.12,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "SpecifierSet accepts an iterator of Specifier objects",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        2,
+        1,
+        623
+      ],
+      "patch_hash": "7930adbca9947062",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_set_equivalence"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "SpecifierSet accepts an iterator of Specifier objects",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_set_equivalence"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "SpecifierSet accepts an iterator of Specifier objects",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_777_iterable_set_equivalence"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "SpecifierSet accepts an iterator of Specifier objects",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_set_equivalence"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.14,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "SpecifierSet accepts an iterator of Specifier objects",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_set_equivalence"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "generated_iterable_compatible_patch",
+      "cost": 0.24,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "SpecifierSet accepts an iterator of Specifier objects",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        7,
+        1,
+        1200
+      ],
+      "patch_hash": "b97b2af4099e63ad",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_set_equivalence"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "stringify_iterable_patch",
+      "cost": 0.12,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "iterable-created SpecifierSet preserves membership semantics",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        2,
+        1,
+        623
+      ],
+      "patch_hash": "7930adbca9947062",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_membership"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "iterable-created SpecifierSet preserves membership semantics",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_membership"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "iterable-created SpecifierSet preserves membership semantics",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_777_iterable_membership"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "iterable-created SpecifierSet preserves membership semantics",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_membership"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.14,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "iterable-created SpecifierSet preserves membership semantics",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_membership"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "generated_iterable_compatible_patch",
+      "cost": 0.24,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "iterable-created SpecifierSet preserves membership semantics",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        7,
+        1,
+        1200
+      ],
+      "patch_hash": "b97b2af4099e63ad",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_iterable_membership"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "stringify_iterable_patch",
+      "cost": 0.12,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "ordinary comma-separated strings still construct SpecifierSet",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        2,
+        1,
+        623
+      ],
+      "patch_hash": "7930adbca9947062",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_string_constructor_still_works"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "ordinary comma-separated strings still construct SpecifierSet",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_string_constructor_still_works"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "ordinary comma-separated strings still construct SpecifierSet",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_string_constructor_still_works"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.17,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "ordinary comma-separated strings still construct SpecifierSet",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_string_constructor_still_works"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "official_pr_777_patch",
+      "cost": 0.14,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "ordinary comma-separated strings still construct SpecifierSet",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        58,
+        23,
+        11262
+      ],
+      "patch_hash": "8189d1f6b10d742f",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_string_constructor_still_works"
+    },
+    {
+      "base_sha": "4d8534061364e3cbfee582192ab81a095ec2db51",
+      "chosen": "generated_iterable_compatible_patch",
+      "cost": 0.24,
+      "head_sha": "835670ff5e13bace7ae2393823b6e3297261861b",
+      "hidden_check": "ordinary comma-separated strings still construct SpecifierSet",
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "patch_coverage_score": [
+        7,
+        1,
+        1200
+      ],
+      "patch_hash": "b97b2af4099e63ad",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/777.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/777",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_777_string_constructor_still_works"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "ascii_pre_release_only",
+      "cost": 0.12,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII preview spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        2,
+        1,
+        590
+      ],
+      "patch_hash": "c560f97ccb13fd72",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_preview_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII preview spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_preview_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "ascii_post_release_only",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII preview spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        2,
+        1,
+        601
+      ],
+      "patch_hash": "9f47fefbe4c245c6",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1384_preview_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII preview spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_preview_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.14,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII preview spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_preview_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "generated_ascii_all_release_words_patch",
+      "cost": 0.24,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII preview spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        4,
+        1,
+        939
+      ],
+      "patch_hash": "930854774696241a",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_preview_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "ascii_pre_release_only",
+      "cost": 0.12,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII post spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        2,
+        1,
+        590
+      ],
+      "patch_hash": "c560f97ccb13fd72",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1384_post_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII post spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_post_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "ascii_post_release_only",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII post spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        2,
+        1,
+        601
+      ],
+      "patch_hash": "9f47fefbe4c245c6",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_post_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII post spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_post_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.14,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII post spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_post_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "generated_ascii_all_release_words_patch",
+      "cost": 0.24,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "compatible specifiers reject non-ASCII post spelling",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        4,
+        1,
+        939
+      ],
+      "patch_hash": "930854774696241a",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_post_uses_ascii_scope"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "ascii_pre_release_only",
+      "cost": 0.12,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "ordinary compatible specifiers still parse",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        2,
+        1,
+        590
+      ],
+      "patch_hash": "c560f97ccb13fd72",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_valid_compatible_specifier_still_parses"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "ordinary compatible specifiers still parse",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_valid_compatible_specifier_still_parses"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "ascii_post_release_only",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "ordinary compatible specifiers still parse",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        2,
+        1,
+        601
+      ],
+      "patch_hash": "9f47fefbe4c245c6",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_valid_compatible_specifier_still_parses"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.17,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "ordinary compatible specifiers still parse",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_valid_compatible_specifier_still_parses"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "official_pr_1384_patch",
+      "cost": 0.14,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "ordinary compatible specifiers still parse",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        6,
+        1,
+        1055
+      ],
+      "patch_hash": "96574a87bbaa1fa6",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_valid_compatible_specifier_still_parses"
+    },
+    {
+      "base_sha": "f8630ea2b7c810de81841459dcdb481d5b7a1318",
+      "chosen": "generated_ascii_all_release_words_patch",
+      "cost": 0.24,
+      "head_sha": "2a16593a8f0fc66addabb8e541fb256b5564d0f2",
+      "hidden_check": "ordinary compatible specifiers still parse",
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "patch_coverage_score": [
+        4,
+        1,
+        939
+      ],
+      "patch_hash": "930854774696241a",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1384.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1384",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1384_valid_compatible_specifier_still_parses"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "cpython_empty_platforms_only",
+      "cost": 0.12,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "cpython_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        2,
+        1,
+        490
+      ],
+      "patch_hash": "8be83f56cc605a7c",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_cpython_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "cpython_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_cpython_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "cpython_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1360_cpython_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "cpython_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_cpython_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.14,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "cpython_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_cpython_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "generated_all_empty_platforms_patch",
+      "cost": 0.24,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "cpython_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_cpython_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "cpython_empty_platforms_only",
+      "cost": 0.12,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "generic_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        2,
+        1,
+        490
+      ],
+      "patch_hash": "8be83f56cc605a7c",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1360_generic_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "generic_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_generic_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "generic_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1360_generic_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "generic_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_generic_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.14,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "generic_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_generic_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "generated_all_empty_platforms_patch",
+      "cost": 0.24,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "generic_tags preserves explicitly empty platforms",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_generic_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "cpython_empty_platforms_only",
+      "cost": 0.12,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "compatible_tags preserves its any-platform fallbacks",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        2,
+        1,
+        490
+      ],
+      "patch_hash": "8be83f56cc605a7c",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1360_compatible_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "compatible_tags preserves its any-platform fallbacks",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_compatible_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "compatible_tags preserves its any-platform fallbacks",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1360_compatible_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.17,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "compatible_tags preserves its any-platform fallbacks",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_compatible_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "official_pr_1360_patch",
+      "cost": 0.14,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "compatible_tags preserves its any-platform fallbacks",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_compatible_empty_platforms"
+    },
+    {
+      "base_sha": "2d873eb6002021a8c007c933fbdab58b37a5079b",
+      "chosen": "generated_all_empty_platforms_patch",
+      "cost": 0.24,
+      "head_sha": "dc7a44cb856f96cc4a540172febd9d46da987ba8",
+      "hidden_check": "compatible_tags preserves its any-platform fallbacks",
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "patch_coverage_score": [
+        6,
+        3,
+        1305
+      ],
+      "patch_hash": "85d3e579345f1279",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1360.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1360",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1360_compatible_empty_platforms"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Requirement rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1345_requirement_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Requirement rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_requirement_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Requirement rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1345_requirement_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Requirement rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_requirement_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.14,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Requirement rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_requirement_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "generated_strict_end_z_anchor_patch",
+      "cost": 0.24,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Requirement rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_requirement_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Marker rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1345_marker_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Marker rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_marker_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Marker rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1345_marker_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Marker rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_marker_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.14,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Marker rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_marker_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "generated_strict_end_z_anchor_patch",
+      "cost": 0.24,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "Marker rejects trailing line breaks",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_marker_rejects_newline"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "horizontal trailing whitespace still parses",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_horizontal_whitespace_still_allowed"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "horizontal trailing whitespace still parses",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_horizontal_whitespace_still_allowed"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "horizontal trailing whitespace still parses",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_horizontal_whitespace_still_allowed"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.17,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "horizontal trailing whitespace still parses",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_horizontal_whitespace_still_allowed"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "official_pr_1345_patch",
+      "cost": 0.14,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "horizontal trailing whitespace still parses",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_horizontal_whitespace_still_allowed"
+    },
+    {
+      "base_sha": "0bfc3cea4f9fe1b1b0c80ce06f02bd2433500c81",
+      "chosen": "generated_strict_end_z_anchor_patch",
+      "cost": 0.24,
+      "head_sha": "9992abe78f1abd1db105a9a322ae5351f4e2b279",
+      "hidden_check": "horizontal trailing whitespace still parses",
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "patch_coverage_score": [
+        2,
+        1,
+        471
+      ],
+      "patch_hash": "fcc56be4b505635c",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1345.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1345",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1345_horizontal_whitespace_still_allowed"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "malformed requirement specifier raises InvalidRequirement",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1332_malformed_specifier_is_invalid_requirement"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "malformed requirement specifier raises InvalidRequirement",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_malformed_specifier_is_invalid_requirement"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "malformed requirement specifier raises InvalidRequirement",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1332_malformed_specifier_is_invalid_requirement"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "malformed requirement specifier raises InvalidRequirement",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_malformed_specifier_is_invalid_requirement"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.14,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "malformed requirement specifier raises InvalidRequirement",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_malformed_specifier_is_invalid_requirement"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "generated_invalid_specifier_wrapper_patch",
+      "cost": 0.24,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "malformed requirement specifier raises InvalidRequirement",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_malformed_specifier_is_invalid_requirement"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "valid requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_valid_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "valid requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_valid_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "valid requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_valid_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "valid requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_valid_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.14,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "valid requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_valid_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "generated_invalid_specifier_wrapper_patch",
+      "cost": 0.24,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "valid requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_valid_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "URL requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_url_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "URL requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_url_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "URL requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_url_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.17,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "URL requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_url_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "official_pr_1332_patch",
+      "cost": 0.14,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "URL requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_url_requirement_still_parses"
+    },
+    {
+      "base_sha": "9d0ec47b36a1bcdf705b397b84cd89272410a00d",
+      "chosen": "generated_invalid_specifier_wrapper_patch",
+      "cost": 0.24,
+      "head_sha": "fa5982288e39434ec2be6a692a03b96607857a00",
+      "hidden_check": "URL requirement still parses",
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "patch_coverage_score": [
+        7,
+        2,
+        1105
+      ],
+      "patch_hash": "178356a0da0b10f8",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1332.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1332",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1332_url_requirement_still_parses"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject newline in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1341_rejects_newline_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject newline in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_newline_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject newline in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 1.0,
+      "success": 0.0,
+      "task_id": "packaging_1341_rejects_newline_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject newline in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_newline_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.14,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject newline in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_newline_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "generated_wheel_name_strict_end_patch",
+      "cost": 0.24,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject newline in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_newline_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "ordinary wheel filename still parses",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_valid_wheel_still_parses"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "ordinary wheel filename still parses",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_valid_wheel_still_parses"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "ordinary wheel filename still parses",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_valid_wheel_still_parses"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "ordinary wheel filename still parses",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_valid_wheel_still_parses"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.14,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "ordinary wheel filename still parses",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_valid_wheel_still_parses"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "generated_wheel_name_strict_end_patch",
+      "cost": 0.24,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "ordinary wheel filename still parses",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_valid_wheel_still_parses"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "no_patch",
+      "cost": 0.12,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject CRLF in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "A_score_order",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_crlf_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject CRLF in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "B_rho0_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_crlf_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "no_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject CRLF in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        0,
+        0,
+        0
+      ],
+      "patch_hash": "e3b0c44298fc1c14",
+      "policy": "C_credal_generic",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_crlf_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.17,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject CRLF in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "D_credal_decision",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_crlf_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "official_pr_1341_patch",
+      "cost": 0.14,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject CRLF in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "E_patch_coverage",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_crlf_wheel_name"
+    },
+    {
+      "base_sha": "9c6f09ba6b313a561d6a64d988647ff3115e82ae",
+      "chosen": "generated_wheel_name_strict_end_patch",
+      "cost": 0.24,
+      "head_sha": "6e1f147b284c0dc803619e8dc0fd6260ce35538c",
+      "hidden_check": "wheel filenames reject CRLF in distribution name",
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "patch_coverage_score": [
+        2,
+        1,
+        648
+      ],
+      "patch_hash": "69c9620a90494ec2",
+      "policy": "F_source_pattern_generated",
+      "pr_patch_url": "https://github.com/pypa/packaging/pull/1341.patch",
+      "pr_url": "https://github.com/pypa/packaging/pull/1341",
+      "selection_loss": 0.0,
+      "success": 1.0,
+      "task_id": "packaging_1341_rejects_crlf_wheel_name"
+    }
+  ],
+  "scope": "seven real pypa/packaging merged-PR fixtures with hidden behavioral checks derived from PR tests; small fixture, not an independent benchmark",
+  "suite": "mined-public-issue-fixture",
+  "summary": {
+    "A_score_order": {
+      "mean_cost": 0.12,
+      "selection_loss": 0.38095238095238093,
+      "success_rate": 0.6190476190476191,
+      "tasks": 21
+    },
+    "B_rho0_decision": {
+      "mean_cost": 0.17,
+      "selection_loss": 0.0,
+      "success_rate": 1.0,
+      "tasks": 21
+    },
+    "C_credal_generic": {
+      "mean_cost": 0.17,
+      "selection_loss": 0.6190476190476191,
+      "success_rate": 0.38095238095238093,
+      "tasks": 21
+    },
+    "D_credal_decision": {
+      "mean_cost": 0.17,
+      "selection_loss": 0.0,
+      "success_rate": 1.0,
+      "tasks": 21
+    },
+    "E_patch_coverage": {
+      "mean_cost": 0.14,
+      "selection_loss": 0.047619047619047616,
+      "success_rate": 0.9523809523809523,
+      "tasks": 21
+    },
+    "F_source_pattern_generated": {
+      "mean_cost": 0.24,
+      "selection_loss": 0.0,
+      "success_rate": 1.0,
+      "tasks": 21
+    }
+  },
+  "task_count": 21
+}

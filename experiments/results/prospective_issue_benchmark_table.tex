@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{Prospectively locked public-issue verifier benchmark. The manifest is frozen before model scoring. The candidate is the no-change pre-merge base snapshot for merged Python PRs that changed both source and tests.}
+\label{tab:prospective-issue-benchmark}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Quantity & Count & Rate \\
+\midrule
+Shared-explanation all-pass wrong candidates & 29/59 & 0.492 \\
+Requirement-conditioned all-pass wrong candidates & 3/59 & 0.051 \\
+Test split shared all-pass wrong candidates & 15/29 & 0.517 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Prospective policy replay: train=14/30; plugin=0.467; upper=0.613; point_false_accept=0/29; credal_false_accept=0/29

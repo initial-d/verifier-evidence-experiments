@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Policy & Accept & Error/accepted & Correct completion & Cost & First triage & Checks\\
+\midrule
+Depth-2 value planner & 0.716 & 0.042 & 0.686 & 0.090 & 1.000 & 2.000\\
+Bayesian depth 2 & 0.716 & 0.042 & 0.686 & 0.090 & 1.000 & 2.000\\
+Fixed triage then target & 0.716 & 0.042 & 0.686 & 0.090 & 1.000 & 2.000\\
+Depth-1 value planner & 0.688 & 0.043 & 0.658 & 0.090 & 0.000 & 1.000\\
+No posterior update & 0.000 & -- & 0.000 & 0.050 & 1.000 & 1.000\\
+Single interface check & 0.000 & -- & 0.000 & 0.070 & 0.000 & 1.000\\
+Single boundary check & 0.000 & -- & 0.000 & 0.070 & 0.000 & 1.000\\
+Fixed broad check & 0.688 & 0.043 & 0.658 & 0.090 & 0.000 & 1.000\\
+Repeat review & 0.000 & -- & 0.000 & 0.050 & 0.000 & 2.000\\
+\bottomrule
+\end{tabular}

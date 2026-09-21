@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Manifest-locked public-history replay. The rows summarize the repository, hidden-check, and fixture-selection boundary.}
+\label{tab:locked-public-history-replay}
+\small
+\begin{adjustbox}{width=\linewidth}
+\begin{tabular}{@{}L{0.25\linewidth}L{0.33\linewidth}L{0.28\linewidth}@{}}
+\toprule
+Replay component & Value & Interpretation \\
+\midrule
+Manifest & 12 issues, 5 repositories, 46 hidden checks; hash 9ef56d15697b & Pinned repository-level stress replay \\
+Source-pattern evidence & simple=32/46; source=46/46 & Source-pattern evidence closes visible-pattern failures at higher cost \\
+Packaging-to-cross transfer & train mass 0.048, train cost 0.100; point 0.480, credal 1.000 & Credal separation under a locked slice-transfer prior \\
+Finite-sample envelope & train rescues 1/21; plug-in 0.048, upper 0.188, cost 0.100 & The Wilson upper envelope purchases the source-pattern query \\
+Cross-repo held-out replay & train mass/cost 0.048/0.100; point 12/25, credal 25/25 & Same-interface stress result on four non-packaging repositories \\
+Scale-up boundary & issue inclusion, motif vocabulary, and source-pattern generator & A larger prospective benchmark would freeze this boundary before development \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+% Test boundary phrase: prospectively locked benchmark split.

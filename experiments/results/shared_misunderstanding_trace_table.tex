@@ -1,0 +1,9 @@
+\begin{tabular}{@{}lllllrl@{}}
+\toprule
+Condition & Template & Candidate & Cheap result & Visible conditioning information & Pre-risk & Route\\
+\midrule
+shared & sort numbers & mutation & pass/pass & source=shared; interp=return-only; atoms=correct/mutation & 0.301 & mutation probe fail; reject\\
+shared & sort numbers & edge & pass/pass & source=shared; interp=simple-case; atoms=correct/edge & 0.251 & edge probe fail; reject\\
+independent & sort numbers & correct & pass/pass & source=independent; interp=complete; atoms=correct/edge & 0.172 & edge probe pass; accept\\
+\bottomrule
+\end{tabular}

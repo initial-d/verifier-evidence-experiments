@@ -1,0 +1,354 @@
+{
+  "cheap_failure_rates": {
+    "independent": {
+      "cheap_all_pass_rate": 0.9166666666666666,
+      "cheap_all_pass_wrong_rate": 0.016666666666666666,
+      "wrong_given_all_pass": 0.01818181818181818
+    },
+    "shared": {
+      "cheap_all_pass_rate": 0.9666666666666667,
+      "cheap_all_pass_wrong_rate": 0.06666666666666667,
+      "wrong_given_all_pass": 0.06896551724137931
+    }
+  },
+  "conditions": {
+    "independent": "cheap generated test and review are generated from the original requirement",
+    "shared": "cheap generated test and review reuse the frozen candidate's incomplete requirement interpretation"
+  },
+  "config": {
+    "calibration_n_per_condition": 48,
+    "decline_loss": 0.16,
+    "delta": 0.05,
+    "final_inputs": "held out from the online controller and used only after accept/reject freezes",
+    "online_probe_inputs": "fixed before calibration from the public requirement templates",
+    "point_threshold_grid": [
+      0.0,
+      0.05
+    ],
+    "probe_cost": 0.035,
+    "repetitions": 400,
+    "seed": 20260917,
+    "test_candidates_per_condition_per_rep": 312
+  },
+  "paired_diagnostics": {
+    "independent": {
+      "avoided_wrong_accepts": 972,
+      "decision_disagreements": 972,
+      "gained_correct_accepts": 0,
+      "lost_correct_accepts": 0,
+      "mean_extra_cost": 0.024903846153846155,
+      "paired_tasks": 124800
+    },
+    "shared": {
+      "avoided_wrong_accepts": 1632,
+      "decision_disagreements": 1632,
+      "gained_correct_accepts": 0,
+      "lost_correct_accepts": 0,
+      "mean_extra_cost": 0.004013782051282052,
+      "paired_tasks": 124800
+    }
+  },
+  "policies": {
+    "bayesian_cost_matched": "history-aware plug-in Bayesian controller with a stricter accept gate selected on calibration to match dynamic-credal probe cost",
+    "bayesian_point": "Jeffreys-smoothed plug-in atom distribution from the same calibration histories",
+    "bayesian_upper": "plug-in query selection with a one-sided calibration upper bound for the accept gate",
+    "dynamic_credal": "Wilson interval atom set with the same value rule and risk gate",
+    "fixed_independent_probe": "always buys the mutation-preservation probe after cheap passes",
+    "fixed_two_probe": "runs the mutation-preservation probe and then the edge-case probe after cheap passes"
+  },
+  "repetition_deltas": {
+    "independent": {
+      "correct_completion": {
+        "central_95_high": 0.0,
+        "central_95_low": 0.0,
+        "improved_repetitions": 0,
+        "mean": 0.0,
+        "mean_ci_high": 0.0,
+        "mean_ci_low": 0.0,
+        "worse_repetitions": 0
+      },
+      "cost": {
+        "central_95_high": 0.032419871794871796,
+        "central_95_low": 0.010205528846153845,
+        "improved_repetitions": 400,
+        "mean": 0.02490384615384616,
+        "mean_ci_high": 0.025517874599358975,
+        "mean_ci_low": 0.024289383012820517,
+        "worse_repetitions": 0
+      },
+      "wrong_accept": {
+        "central_95_high": 0.019230769230769232,
+        "central_95_low": 0.0,
+        "improved_repetitions": 162,
+        "mean": 0.007788461538461539,
+        "mean_ci_high": 0.008701923076923078,
+        "mean_ci_low": 0.006826923076923078,
+        "worse_repetitions": 0
+      }
+    },
+    "shared": {
+      "correct_completion": {
+        "central_95_high": 0.0,
+        "central_95_low": 0.0,
+        "improved_repetitions": 0,
+        "mean": 0.0,
+        "mean_ci_high": 0.0,
+        "mean_ci_low": 0.0,
+        "worse_repetitions": 0
+      },
+      "cost": {
+        "central_95_high": 0.02344831730769231,
+        "central_95_low": 0.0,
+        "improved_repetitions": 122,
+        "mean": 0.004013782051282052,
+        "mean_ci_high": 0.004657439903846154,
+        "mean_ci_low": 0.0034063020833333337,
+        "worse_repetitions": 0
+      },
+      "wrong_accept": {
+        "central_95_high": 0.07692307692307693,
+        "central_95_low": 0.0,
+        "improved_repetitions": 122,
+        "mean": 0.013076923076923078,
+        "mean_ci_high": 0.015096153846153848,
+        "mean_ci_low": 0.011153846153846155,
+        "worse_repetitions": 0
+      }
+    }
+  },
+  "selected_thresholds": {
+    "independent": {
+      "max_threshold": 0.045,
+      "mean_calibration_cost": 0.03201588541666667,
+      "mean_target_cost": 0.03201588541666667,
+      "mean_threshold": 0.027925000000000002,
+      "min_threshold": 0.019
+    },
+    "shared": {
+      "max_threshold": 0.05,
+      "mean_calibration_cost": 0.02329140625,
+      "mean_target_cost": 0.02329140625,
+      "mean_threshold": 0.0444825,
+      "min_threshold": 0.023
+    }
+  },
+  "suite": "shared misunderstanding fixed-candidate executable replay",
+  "summary": {
+    "independent": {
+      "bayesian_cost_matched": {
+        "accept_rate": 0.9003445512820513,
+        "correct_completion_rate": 0.9003445512820513,
+        "edge_query_rate": 0.916963141025641,
+        "error_among_accepted": 0.0,
+        "mean_cost": 0.03209370993589744,
+        "mean_probes": 0.916963141025641,
+        "mutation_query_rate": 0.0,
+        "query_rate": 0.916963141025641,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      },
+      "bayesian_point": {
+        "accept_rate": 0.9081330128205128,
+        "correct_completion_rate": 0.9003445512820513,
+        "edge_query_rate": 0.2054246794871795,
+        "error_among_accepted": 0.008576344465522566,
+        "mean_cost": 0.007189863782051283,
+        "mean_probes": 0.2054246794871795,
+        "mutation_query_rate": 0.0,
+        "query_rate": 0.2054246794871795,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.007788461538461538
+      },
+      "bayesian_upper": {
+        "accept_rate": 0.0,
+        "correct_completion_rate": 0.0,
+        "edge_query_rate": 0.0,
+        "error_among_accepted": null,
+        "mean_cost": 0.0,
+        "mean_probes": 0.0,
+        "mutation_query_rate": 0.0,
+        "query_rate": 0.0,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      },
+      "dynamic_credal": {
+        "accept_rate": 0.9003445512820513,
+        "correct_completion_rate": 0.9003445512820513,
+        "edge_query_rate": 0.916963141025641,
+        "error_among_accepted": 0.0,
+        "mean_cost": 0.03209370993589744,
+        "mean_probes": 0.916963141025641,
+        "mutation_query_rate": 0.0,
+        "query_rate": 0.916963141025641,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      },
+      "fixed_independent_probe": {
+        "accept_rate": 0.916963141025641,
+        "correct_completion_rate": 0.9003445512820513,
+        "edge_query_rate": 0.0,
+        "error_among_accepted": 0.018123509004954692,
+        "mean_cost": 0.03209370993589744,
+        "mean_probes": 0.916963141025641,
+        "mutation_query_rate": 0.916963141025641,
+        "query_rate": 0.916963141025641,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.016618589743589745
+      },
+      "fixed_two_probe": {
+        "accept_rate": 0.9003445512820513,
+        "correct_completion_rate": 0.9003445512820513,
+        "edge_query_rate": 0.0,
+        "error_among_accepted": 0.0,
+        "mean_cost": 0.06418741987179488,
+        "mean_probes": 1.833926282051282,
+        "mutation_query_rate": 0.0,
+        "query_rate": 0.916963141025641,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      }
+    },
+    "shared": {
+      "bayesian_cost_matched": {
+        "accept_rate": 0.899775641025641,
+        "correct_completion_rate": 0.899775641025641,
+        "edge_query_rate": 0.3336217948717949,
+        "error_among_accepted": 0.0,
+        "mean_cost": 0.023339783653846157,
+        "mean_probes": 0.6668509615384616,
+        "mutation_query_rate": 0.3332291666666667,
+        "query_rate": 0.6668509615384616,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      },
+      "bayesian_point": {
+        "accept_rate": 0.9128525641025641,
+        "correct_completion_rate": 0.899775641025641,
+        "edge_query_rate": 0.2686217948717949,
+        "error_among_accepted": 0.014325339700150978,
+        "mean_cost": 0.019326001602564105,
+        "mean_probes": 0.5521714743589744,
+        "mutation_query_rate": 0.28354967948717946,
+        "query_rate": 0.5521714743589744,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.013076923076923076
+      },
+      "bayesian_upper": {
+        "accept_rate": 0.0,
+        "correct_completion_rate": 0.0,
+        "edge_query_rate": 0.0,
+        "error_among_accepted": null,
+        "mean_cost": 0.0,
+        "mean_probes": 0.0,
+        "mutation_query_rate": 0.0,
+        "query_rate": 0.0,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      },
+      "dynamic_credal": {
+        "accept_rate": 0.899775641025641,
+        "correct_completion_rate": 0.899775641025641,
+        "edge_query_rate": 0.3336217948717949,
+        "error_among_accepted": 0.0,
+        "mean_cost": 0.023339783653846157,
+        "mean_probes": 0.6668509615384616,
+        "mutation_query_rate": 0.3332291666666667,
+        "query_rate": 0.6668509615384616,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      },
+      "fixed_independent_probe": {
+        "accept_rate": 0.9331730769230769,
+        "correct_completion_rate": 0.899775641025641,
+        "edge_query_rate": 0.0,
+        "error_among_accepted": 0.03578911214150782,
+        "mean_cost": 0.03382295673076923,
+        "mean_probes": 0.9663701923076923,
+        "mutation_query_rate": 0.9663701923076923,
+        "query_rate": 0.9663701923076923,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0333974358974359
+      },
+      "fixed_two_probe": {
+        "accept_rate": 0.899775641025641,
+        "correct_completion_rate": 0.899775641025641,
+        "edge_query_rate": 0.0,
+        "error_among_accepted": 0.0,
+        "mean_cost": 0.06648401442307693,
+        "mean_probes": 1.8995432692307692,
+        "mutation_query_rate": 0.03319711538461539,
+        "query_rate": 0.9663701923076923,
+        "tasks": 124800,
+        "wrong_accept_per_task": 0.0
+      }
+    }
+  },
+  "traces": [
+    {
+      "accepted": false,
+      "bug_family": "mutation",
+      "cheap_all_pass": true,
+      "cheap_review_pass": true,
+      "cheap_test_pass": true,
+      "condition": "shared",
+      "cost": 0.035,
+      "edge_probe_pass": true,
+      "final_correct": false,
+      "interpretation": "return_only",
+      "mutation_probe_pass": false,
+      "policy": "dynamic_credal",
+      "post_risk": 1.0,
+      "query": "mutation_probe",
+      "query_count": 1,
+      "rep": 0,
+      "risk": 0.3011682794398689,
+      "state": "mutation",
+      "task_id": "shared_real_0054",
+      "template": "sort_numbers"
+    },
+    {
+      "accepted": false,
+      "bug_family": "edge",
+      "cheap_all_pass": true,
+      "cheap_review_pass": true,
+      "cheap_test_pass": true,
+      "condition": "shared",
+      "cost": 0.035,
+      "edge_probe_pass": false,
+      "final_correct": false,
+      "interpretation": "simple_case",
+      "mutation_probe_pass": true,
+      "policy": "dynamic_credal",
+      "post_risk": 1.0,
+      "query": "edge_probe",
+      "query_count": 1,
+      "rep": 0,
+      "risk": 0.2507505631331769,
+      "state": "edge",
+      "task_id": "shared_real_0056",
+      "template": "sort_numbers"
+    },
+    {
+      "accepted": true,
+      "bug_family": "correct",
+      "cheap_all_pass": true,
+      "cheap_review_pass": true,
+      "cheap_test_pass": true,
+      "condition": "independent",
+      "cost": 0.035,
+      "edge_probe_pass": true,
+      "final_correct": true,
+      "interpretation": "complete",
+      "mutation_probe_pass": true,
+      "policy": "dynamic_credal",
+      "post_risk": 0.0,
+      "query": "edge_probe",
+      "query_count": 1,
+      "rep": 0,
+      "risk": 0.17226678350884503,
+      "state": "correct",
+      "task_id": "shared_real_0000",
+      "template": "sort_numbers"
+    }
+  ]
+}

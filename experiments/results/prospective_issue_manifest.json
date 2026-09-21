@@ -1,0 +1,1309 @@
+{
+  "issue_count": 59,
+  "manifest_sha256": "ea3097fbc892dca098c793fd5775c39c6c12ee050df0fe4d4798dfb830cde788",
+  "protocol": {
+    "created_by": "experiments/run_prospective_issue_benchmark.py",
+    "filters": [
+      "merged GitHub PR",
+      "non-bot author",
+      "at least one non-test Python source file changed",
+      "at least one Python test file changed",
+      "search limit per repo = 45",
+      "changed files <= 18",
+      "additions + deletions <= 900"
+    ],
+    "hidden_label": "pre-merge no-change candidate is treated as incorrect for selected merged source+test PRs",
+    "max_per_repo": 6,
+    "online_information": "title, body excerpt, source filenames, and changed-file counts; test patches and merged outcomes are hidden from validators",
+    "repos": [
+      "pallets/click",
+      "pallets/flask",
+      "psf/requests",
+      "pytest-dev/pytest",
+      "encode/httpx",
+      "scrapy/scrapy",
+      "sqlalchemy/sqlalchemy",
+      "python-pillow/Pillow",
+      "pydantic/pydantic",
+      "fastapi/fastapi",
+      "sphinx-doc/sphinx"
+    ],
+    "selection_time_boundary": "manifest is written before model scoring",
+    "split_rule": "calibration repos are the first half of the fixed repo list; test repos are the remainder",
+    "target_issues": 60
+  },
+  "records": [
+    {
+      "additions": 49,
+      "base_ref_oid": "6d5bac5c712195cbfa9666ba0ecbf0573cdea356",
+      "body_excerpt": "Just a small bug I encountered in my CLIs, where as `vs.` or `e.g.` was prematurely ending the shorten version of a help message produced by `_make_default_short_help`.\r\n\r\nAlso use the opportunity to simplify the calculations and depends on Python's `textwrap.shorten`.",
+      "changed_file_count": 3,
+      "deletions": 34,
+      "head_ref_oid": "f67c2bb6c2f055c1c7a57cd46c3697fc26a7742e",
+      "merged_at": "2026-09-12T02:35:08Z",
+      "number": 3865,
+      "repo": "pallets/click",
+      "source_files": [
+        "src/click/utils.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_utils/test_make_default_short_help.py"
+      ],
+      "title": "Fix short help abbreviation",
+      "url": "https://github.com/pallets/click/pull/3865"
+    },
+    {
+      "additions": 61,
+      "base_ref_oid": "86949d19b930ef68a45566544cb4b9508d895d0d",
+      "body_excerpt": "This is a small refactor which deduplicate the management of `help` argument from `Option` and `Argument` and move it to the common `Parameter` parent class.\r\n\r\nIts only side effect is that `Parameter.to_info_dict` now reports it.\r\n\r\nThis is a follow up on #3860.",
+      "changed_file_count": 3,
+      "deletions": 31,
+      "head_ref_oid": "405a5481e4dbd5022799993d787bd8446137d9a3",
+      "merged_at": "2026-09-10T19:29:50Z",
+      "number": 3861,
+      "repo": "pallets/click",
+      "source_files": [
+        "src/click/core.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_info_dict.py"
+      ],
+      "title": "Move common `help` argument from `Option` and `Argument` to `Parameter`",
+      "url": "https://github.com/pallets/click/pull/3861"
+    },
+    {
+      "additions": 70,
+      "base_ref_oid": "7944461a80b780d060899c8835acab3c273a04a6",
+      "body_excerpt": "This is an attempt to make `click.Path` generic on `path_type` following #3407.\r\n\r\nCloses #3822\r\n",
+      "changed_file_count": 4,
+      "deletions": 14,
+      "head_ref_oid": "22177f857a34e3c35ba957553853a37f23feb37e",
+      "merged_at": "2026-09-08T19:48:10Z",
+      "number": 3858,
+      "repo": "pallets/click",
+      "source_files": [
+        "src/click/types.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_types/test_Path.py",
+        "tests/typing/typing_path.py"
+      ],
+      "title": "Make `click.Path` generic on `path_type`",
+      "url": "https://github.com/pallets/click/pull/3858"
+    },
+    {
+      "additions": 42,
+      "base_ref_oid": "be13b152cf5949a362926322c835fa76019cc6fe",
+      "body_excerpt": "This PR splits the production of an option's left help column into its own dedicated column. This always returns the invocation specification of an option, even if that option is hidden.\r\n\r\n`get_help_record()` on the other hand is unmodified and still keep returning the whole option's help that is to be displayed.\r\n\r\nThat distinction help separate the rendering layer:\r\n- `get_help_record()` is returning what should be displayed to the user \r\n- `get_help_spec()` is returning what the option specification is, regardless of the decision to display it to the user\r\n\r\nThis allows finer introspection of the Click machinery and its rendering pipeline.\r\n\r\nThis is the other half of a work I initiated 2 years ago with:\r\n- #2516\r\n- #2517",
+      "changed_file_count": 3,
+      "deletions": 4,
+      "head_ref_oid": "271effb3d96da5575eb527216ce3552bd7628fab",
+      "merged_at": "2026-09-02T13:01:39Z",
+      "number": 3821,
+      "repo": "pallets/click",
+      "source_files": [
+        "src/click/core.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_options.py"
+      ],
+      "title": "Add `Option.get_help_spec` to extract the help's left part of an hidden option",
+      "url": "https://github.com/pallets/click/pull/3821"
+    },
+    {
+      "additions": 273,
+      "base_ref_oid": "cbb5b2df1ee3492115f8c2ee5cbb09e2271fc714",
+      "body_excerpt": "This PR address https://github.com/pallets/click/issues/3802 by unifying the policy that was already implemented elsewhere in the code.\r\n\r\nThis applies the policy the pager has had since #351, where a late interrupt must not replace the intended outcome:\r\nhttps://github.com/pallets/click/blob/8b19813f2bfca99f1018a587a8cf54fc959f2e5d/src/click/_termui_impl.py#L618-L632\r\n\r\nSo now in `main()`, every handler takes the same two steps:\r\n- propagate when standalone mode is off, or\r\n- collect the message and the exit code.\r\n\r\nA final step then prints the message and exits, so a late interrupt can only lose the message, not the code.\r\n\r\nThis save one nesting level in the `try...except` cascade of `main()`.\r\n\r\nThis is in accordance with older policy choices from:\r\n- #2380: where we decided that the first interrupt still reaches non-standalone callers as `Abort`, and keeps the interrupt as its `__cause__`\r\n- #2584: where we decided not to change the `Aborted!` message\r\n\r\nWith these changes, we do not crash anymore, and a late interrupt after a successful run now exits 0, instead of printing a traceback.\r\n\r\nThis PR also adds stress tests that introduce random delays in the execution so we can catch regression at different points in time with real SIGINTs.\r\n\r\nOff course we can discuss the policy we rely on and I'm ready to change the code accordingly.",
+      "changed_file_count": 4,
+      "deletions": 37,
+      "head_ref_oid": "fc518e41218b447e875fe27244ae692c269bcb77",
+      "merged_at": "2026-08-31T23:42:24Z",
+      "number": 3818,
+      "repo": "pallets/click",
+      "source_files": [
+        "src/click/core.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_abort_interrupt.py"
+      ],
+      "title": "Fix race condition on `KeyboardInterrupt` in `Command.main()`",
+      "url": "https://github.com/pallets/click/pull/3818"
+    },
+    {
+      "additions": 60,
+      "base_ref_oid": "3cbcf9b11546f4cf10b36d3e2e531733ba6fe001",
+      "body_excerpt": "Just a small issue I encountered on Python 3.10, where `Enum` has no `__deepcopy__`. Now that every parameter have a sentinel, `copy.deepcopy()` of any `Option`, `Argument` or `Command` fails on Python 3.10. And `pickle` fails on every Python version. This PR fix this issue.",
+      "changed_file_count": 3,
+      "deletions": 0,
+      "head_ref_oid": "f58ca3e81424a35626c8a475eb59ab95589008ce",
+      "merged_at": "2026-08-29T15:12:36Z",
+      "number": 3805,
+      "repo": "pallets/click",
+      "source_files": [
+        "src/click/_utils.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_utils/test_sentinel.py"
+      ],
+      "title": "Fix `copy`, `deepcopy` and `pickle` of `Sentinel` members",
+      "url": "https://github.com/pallets/click/pull/3805"
+    },
+    {
+      "additions": 14,
+      "base_ref_oid": "3596b1ab61cea85edb8970e83ff61daa073facf8",
+      "body_excerpt": "[RFC 10008](https://datatracker.ietf.org/doc/html/rfc10008) isn't accepted yet, but it's been kicking around for years and looks like it will pass. I'm adding it now so I don't have to watch it anymore.\r\n\r\nAdded `client.query` method in https://github.com/pallets/werkzeug/pull/3219. Adjusted the test here to account for Werkzeug not being released yet.\r\n\r\ncloses #3193 ",
+      "changed_file_count": 3,
+      "deletions": 2,
+      "head_ref_oid": "89992954ec71b594b1b911f98977cdc8ad46a057",
+      "merged_at": "2026-08-11T20:19:14Z",
+      "number": 6133,
+      "repo": "pallets/flask",
+      "source_files": [
+        "src/flask/sansio/scaffold.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_basic.py"
+      ],
+      "title": "add `app.query` route decorator",
+      "url": "https://github.com/pallets/flask/pull/6133"
+    },
+    {
+      "additions": 23,
+      "base_ref_oid": "514fc6b3e8402e4c646d5284e97a4f0ab50a7c4b",
+      "body_excerpt": "Fix two usages of `.partition(\":\")` on potential IPv6 addresses.\r\nReplace them with alternatives.\r\n\r\nFixes https://github.com/pallets/flask/issues/6093\r\n\r\n<!--\r\nEnsure each step in CONTRIBUTING.rst is complete, especially the following:\r\n- Add tests that demonstrate the correct behavior of the change. Tests\r\n  should fail without the change.\r\n- Add or update relevant docs, in the docs folder and in code.\r\n- Add an entry in CHANGES.rst summarizing the change and linking to the issue.\r\n- Add `.. versionchanged::` entries in any relevant code docs.\r\n-->\r\n",
+      "changed_file_count": 4,
+      "deletions": 5,
+      "head_ref_oid": "7203feabf723edae0286ae5dc64fec8ac4c91735",
+      "merged_at": "2026-08-11T19:48:41Z",
+      "number": 6096,
+      "repo": "pallets/flask",
+      "source_files": [
+        "src/flask/app.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "src/flask/testing.py",
+        "tests/test_basic.py",
+        "tests/test_testing.py"
+      ],
+      "title": "Fix `.partition(\":\")` usage on potential IPv6 addresses",
+      "url": "https://github.com/pallets/flask/pull/6096"
+    },
+    {
+      "additions": 194,
+      "base_ref_oid": "7b0088693ece1bd3a9238a6fdf56ed8df7a4d43b",
+      "body_excerpt": "Previously, Flask documented that teardown callbacks must not fail. Now, all callbacks will be called, and any errors are collected to be raised at the end. This applies to app and request teardown callbacks and signals. On Python >= 3.11, this will result in an `ExceptionGroup` each for app and request teardown, collected in an `ExceptionGroup` for overall teardown. On 3.10, the first collected error is raise, which basically matches what happens now.\r\n\r\nAlso adjusts a bunch of tests to clean up any resources. None were failing with `ResourceWarning`, but this ensures they don't even if they fail for some other reason.",
+      "changed_file_count": 10,
+      "deletions": 80,
+      "head_ref_oid": "fbb6f0bc4c60a0bada0e03c3480d0ccf30a3c1df",
+      "merged_at": "2026-02-20T04:00:34Z",
+      "number": 5928,
+      "repo": "pallets/flask",
+      "source_files": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/helpers.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_appctx.py",
+        "tests/test_basic.py",
+        "tests/test_blueprints.py",
+        "tests/test_helpers.py",
+        "tests/test_testing.py"
+      ],
+      "title": "all teardown callbacks are called despite errors",
+      "url": "https://github.com/pallets/flask/pull/5928"
+    },
+    {
+      "additions": 96,
+      "base_ref_oid": "d3b78fd18a8d9e224cb9ef58a23cec9b1ffc9ce9",
+      "body_excerpt": "`OPTIONS` is added correctly whenever `provide_automatic_options` is set. Previously, it was only added if the argument was not passed and was not set as an attribute; it could only be disabled, not enabled.\r\n\r\nAlso cleans up the tests about options. Fixes some other tests that were inadvertently adding duplicate routes.\r\n\r\nfixes #5916 ",
+      "changed_file_count": 7,
+      "deletions": 86,
+      "head_ref_oid": "e82db2ca3a22c9614c1987392c9cfaa8c6ce99ad",
+      "merged_at": "2026-02-12T21:07:51Z",
+      "number": 5917,
+      "repo": "pallets/flask",
+      "source_files": [
+        "src/flask/sansio/app.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_basic.py",
+        "tests/test_blueprints.py",
+        "tests/test_cli.py",
+        "tests/test_views.py"
+      ],
+      "title": "fix provide_automatic_options override",
+      "url": "https://github.com/pallets/flask/pull/5917"
+    },
+    {
+      "additions": 167,
+      "base_ref_oid": "adf363679da2d9a5ddc564bb2da563c7ca083916",
+      "body_excerpt": "The current `AppContext` object is passed through the various request dispatch methods, rather than each method accessing the proxies. closes #5815 \r\n\r\n@pgjones first proposed this in #5229 as a way to speed up dispatch especially for Quart and async views. This PR applies to more methods, and also implements compatibility during a deprecation period.\r\n\r\nDispatch methods now take `ctx: AppContext` as the first parameter. The following `Flask` methods were changed:\r\n\r\n- `update_template_context`\r\n- `handle_http_exception`\r\n- `handle_user_exception`\r\n- `handle_exception`\r\n- `log_exception`\r\n- `dispatch_request`\r\n- `full_dispatch_request`\r\n- `finalize_request`\r\n- `make_default_options_response`\r\n- `preprocess_request`\r\n- `process_response`\r\n- `do_teardown_request`\r\n- `do_teardown_appcontext`\r\n\r\n`url_for` and `make_response` were not changed, as it's much more likely that these are called from user code that only has access to the proxy.\r\n\r\nAn `__init_subclass__` class method is added to detect old signatures on subclasses of `Flask`. The second parameter is inspected (first is self). If it is not annotated, it must be named `ctx`. If it is annotated, it must either be the string or class `AppContext`. If an old signature is detected, the method is wrapped to remove the argument when other `Flask` methods call it during dispatch. The base method is also wrapped to inject the argument so that `super().base_method` from the overridden method will continue to work.\r\n\r\nI did not apply the compat wrapper to every base `Flask` method, only the ones that a subclass overrides. Therefor",
+      "changed_file_count": 6,
+      "deletions": 72,
+      "head_ref_oid": "6a64969009bf1898bd302e6a9633f71942523f7f",
+      "merged_at": "2025-11-17T16:49:53Z",
+      "number": 5818,
+      "repo": "pallets/flask",
+      "source_files": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/templating.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_reqctx.py",
+        "tests/test_subclassing.py"
+      ],
+      "title": "pass context through dispatch methods",
+      "url": "https://github.com/pallets/flask/pull/5818"
+    },
+    {
+      "additions": 63,
+      "base_ref_oid": "49b7e7bc8fb69d605719991d1c0a99fcee689053",
+      "body_excerpt": "Store the app context as well as the request context when creating the generator. This prevents the request context from automatically creating and pushing a different app context. Then push the app context first, and push them only when iteration starts, not during setup. This prevents the request context from automatically popping the app context, and avoids associating the internal ContextVar with the temporary event loop in async views.\r\n\r\nfixes #5774",
+      "changed_file_count": 3,
+      "deletions": 32,
+      "head_ref_oid": "9822a0351574790cb66c652fcc396ad7aa2b09d8",
+      "merged_at": "2025-08-19T15:23:51Z",
+      "number": 5799,
+      "repo": "pallets/flask",
+      "source_files": [
+        "src/flask/helpers.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_helpers.py"
+      ],
+      "title": "refactor stream_with_context for async views",
+      "url": "https://github.com/pallets/flask/pull/5799"
+    },
+    {
+      "additions": 24,
+      "base_ref_oid": "6f205ff422bccd5e4c4fc0b64c5f3e7df5181db6",
+      "body_excerpt": "This PR is a successor to #7502. The proxied-read case appears in the standard library which points to it being a pretty well established pattern. A quick search shows there are two other places this was missed in.\r\n\r\nRather than put `or hasattr(data, \"read\")` everywhere we use want to use `SupportsRead`, this combines it into a single check that scopes typing correctly for proxy objects. That should hopefully avoid missing it for future checks as well.",
+      "changed_file_count": 3,
+      "deletions": 7,
+      "head_ref_oid": "8561a353cfa7bb44f90d30f5cbb3e596611f7ff1",
+      "merged_at": "2026-06-09T15:45:59Z",
+      "number": 7505,
+      "repo": "psf/requests",
+      "source_files": [
+        "src/requests/_types.py",
+        "src/requests/models.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_requests.py"
+      ],
+      "title": "Add hasattr checks for remaining protocol isinstance checks",
+      "url": "https://github.com/psf/requests/pull/7505"
+    },
+    {
+      "additions": 14,
+      "base_ref_oid": "661970d171d9c3e12e4c789c4768db647d8c4da0",
+      "body_excerpt": "",
+      "changed_file_count": 2,
+      "deletions": 1,
+      "head_ref_oid": "be53ff13b12df758cba1220f48fca0be31bcf03c",
+      "merged_at": "2026-06-08T20:52:51Z",
+      "number": 7502,
+      "repo": "psf/requests",
+      "source_files": [
+        "src/requests/models.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_requests.py"
+      ],
+      "title": "Fix `_encode_files` detection for `__getattr__`-based file wrappers",
+      "url": "https://github.com/psf/requests/pull/7502"
+    },
+    {
+      "additions": 18,
+      "base_ref_oid": "0b401c76b6e80a4eecf3c690085b2553f6e261ca",
+      "body_excerpt": "Resolves #7432 .\r\n\r\nAdd `hasattr(data, \"__iter__\")` as a fallback stream detector:\r\n```python\r\nif (\r\n    isinstance(data, Iterable) or hasattr(data, \"__iter__\")\r\n) and not isinstance(data, (str, bytes, list, tuple, Mapping)):\r\n```\r\nThis catches file-like objects that proxy their interface through `__getattr__`, restoring the 2.33.1 behavior without reverting the isinstance(Iterable) modernization for standard iterables.",
+      "changed_file_count": 2,
+      "deletions": 3,
+      "head_ref_oid": "ea1c36c1b1a8364e234b6ad49ea05e3261636f8a",
+      "merged_at": "2026-05-12T17:51:02Z",
+      "number": 7433,
+      "repo": "psf/requests",
+      "source_files": [
+        "src/requests/models.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_requests.py"
+      ],
+      "title": "Fix `prepare_body` stream detection for `__getattr__`-based file wrappers",
+      "url": "https://github.com/psf/requests/pull/7433"
+    },
+    {
+      "additions": 27,
+      "base_ref_oid": "b684dcb9bbf3aa557d1238e72062c4a29737dd1c",
+      "body_excerpt": "This PR ports a [fix](https://bugs.python.org/issue39057) from CPython to constrain no_proxy behavior to domain boundaries. This was originally undefined behavior when Requests implemented `no_proxy` support but has since had bug fixes released in both CPython and Curl. We'll follow suit to conform with ecosystem expectations and resolve long standing issue #4795.",
+      "changed_file_count": 2,
+      "deletions": 2,
+      "head_ref_oid": "52220f66843d08217b89204b7f85183fdf7514d9",
+      "merged_at": "2026-05-11T19:24:21Z",
+      "number": 7427,
+      "repo": "psf/requests",
+      "source_files": [
+        "src/requests/utils.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_utils.py"
+      ],
+      "title": "Port bpo-39057 to Requests",
+      "url": "https://github.com/psf/requests/pull/7427"
+    },
+    {
+      "additions": 2,
+      "base_ref_oid": "f43f750ee10addbaa13901c1017631b4d70fd6e3",
+      "body_excerpt": "Fix typos found by [typos](https://github.com/crate-ci/typos).\r\n\r\nAlso, the plural of **status** is **status** or **statuses** - not [**stati**](https://www.oed.com/search/dictionary/?q=stati):\r\nhttps://github.com/psf/requests/blob/f43f750ee10addbaa13901c1017631b4d70fd6e3/src/requests/models.py#L71-L73\r\nI'd like to fix this too, but isn't `REDIRECT_STATI` pat of the API?",
+      "changed_file_count": 2,
+      "deletions": 2,
+      "head_ref_oid": "3ed1cdc1bf9cc6365ba9be68bd4c039234051723",
+      "merged_at": "2026-04-30T14:35:13Z",
+      "number": 7395,
+      "repo": "psf/requests",
+      "source_files": [
+        "src/requests/adapters.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_requests.py"
+      ],
+      "title": "Fix typos",
+      "url": "https://github.com/psf/requests/pull/7395"
+    },
+    {
+      "additions": 9,
+      "base_ref_oid": "cbce031327be4f1b4b5fd041ff4dcaa8efa2ce53",
+      "body_excerpt": "This PR should address #6295, avoiding the unnecessary addition of the current response in its own redirect history. Ideally, we should remove intermediate `.history` assignment entirely, as `Session.send()` overwrites it on the final response anyway. The intermediary behavior introduces a number of issues both in intuitiveness and a reference explosion delaying the objects being properly cleaned up after use.\r\n\r\nThat's unfortunately a breaking change we'll have to wait on, but this should fix the immediate issue for now.",
+      "changed_file_count": 2,
+      "deletions": 2,
+      "head_ref_oid": "3ee28b806f8bc414b29f7b4561e53c161924fe66",
+      "merged_at": "2026-04-05T15:31:02Z",
+      "number": 7328,
+      "repo": "psf/requests",
+      "source_files": [
+        "src/requests/sessions.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_requests.py"
+      ],
+      "title": "Prevent Response self-reference in redirect history",
+      "url": "https://github.com/psf/requests/pull/7328"
+    },
+    {
+      "additions": 46,
+      "base_ref_oid": "99ab2acccff15f757260a1e1fbb0d2a47fc01041",
+      "body_excerpt": "Fix #15052\r\n\r\n`co_firstlineno` is already 1-based, there is no need to +1 it as we do for 0-based linenos.\r\n\r\nIt's possible the +1 was done due to `getlocation` mostly getting used on fixture functions, which are decorated with `@pytest.fixture`. Since `co_firstlineno` points at the first decorator line, the +1 made it point at the actual `def` line. However, this then misses on plain functions like is done in `--fixtures-per-test` for the item functions (which are likely not decorated).\r\n\r\nWe don't currently try to workaround the decorator problem, even the more elaborate `Code`/`getfslineno` code doesn't try to handle it AFAICS. This is just what Python returns, so let's go with it.",
+      "changed_file_count": 4,
+      "deletions": 45,
+      "head_ref_oid": "09d0020ff205d1166b9b541efccf19333ca69c3a",
+      "merged_at": "2026-09-17T12:33:37Z",
+      "number": 15053,
+      "repo": "pytest-dev/pytest",
+      "source_files": [
+        "src/_pytest/compat.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "testing/python/fixtures.py",
+        "testing/python/show_fixtures_per_test.py"
+      ],
+      "title": "fixtures: fix lineno off-by-one in --fixtures/--fixtures-per-test and a couple of error messages",
+      "url": "https://github.com/pytest-dev/pytest/pull/15053"
+    },
+    {
+      "additions": 29,
+      "base_ref_oid": "99ab2acccff15f757260a1e1fbb0d2a47fc01041",
+      "body_excerpt": "Fixes #15043.\n\n`cache.set()` already warns when opening a cache file fails, but an `OSError` from writing or closing it currently escapes. Move the existing write into the same error handler so these failures also produce `PytestCacheWarning`.\n\nThe regression test covers open, write, and close failures. The write and close cases fail before the fix; all three pass afterward. A separate reproduction using a real file-size limit also fails on pytest 9.1.1 and unmodified main, then produces warnings with this fix.\n\nChecks on macOS:\n\n- Full Python 3.13 suite, `tox -e py313 -- -q`: 4,607 passed, 51 skipped, 15 xfailed, 5 xpassed.\n- Cache tests on Python 3.12 and 3.13: 68 passed on each.\n- `tox -e linting`: passed.\n\nJSON serialization and warning filters keep their existing behavior.\n\nCo-developed by Poorva Barve and Codex.\n",
+      "changed_file_count": 4,
+      "deletions": 4,
+      "head_ref_oid": "f36ef6fe1d735aca4c033303c067db037d4aaf22",
+      "merged_at": "2026-09-18T06:25:34Z",
+      "number": 15044,
+      "repo": "pytest-dev/pytest",
+      "source_files": [
+        "src/_pytest/cacheprovider.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "testing/test_cacheprovider.py"
+      ],
+      "title": "Warn when writing or closing a cache file fails",
+      "url": "https://github.com/pytest-dev/pytest/pull/15044"
+    },
+    {
+      "additions": 199,
+      "base_ref_oid": "fe9eef7ebc62042f26edfca2b922e08c33180ed5",
+      "body_excerpt": "> **AI-authored.** I asked an agent (Claude Opus 5 via Claude Code) to look into\n> the help-text wrapping after reviewing #15021. The investigation, the\n> comparisons against other libraries, the patch, the tests and this text are\n> its work. I read it and I'm posting it.\n\nSupersedes #15021, which fixes a narrower symptom on top of a base that is\nitself wrong.\n\n## Background\n\n87423d3cc (#6817, @blueyed) taught the help formatter to keep explicit line\nbreaks, so that a help text can be written as a list instead of being reflowed\ninto one blob. It did that by splitting on newlines and wrapping each line\nseparately. That commit's own message names the cost:\n\n> This might also result in unexpected changes (hard wrapping), when line\n> endings where used unintentionally, e.g. with:\n> ```\n> help=\"\"\"\n>     some long\n>     help text\n>     \"\"\"\n> ```\n\nThe `line.strip()` in `_split_lines` is what holds that back. It works, but it\ncannot distinguish source indentation from indentation that carries meaning, so\nit flattens both:\n\n```\ncontrol the thing                       control the thing\n  * fast: skip the expensive...    \u2192    * fast: skip the expensive validation\n  * slow: run every check...            pass entirely and hope for the best\n```\n\nA wrapped item is now indistinguishable from a new one. Blank lines vanish too,\nsince `textwrap.wrap(\"\")` returns no lines \u2014 that is the symptom #15021 reports.\n\n## The other half\n\nThere are two independent wrapping implementations. `helpconfig.showhelp()`\npasses the whole help text to `textwrap.wrap`, so newlines degrade to ordinary\nwhitespace a",
+      "changed_file_count": 5,
+      "deletions": 22,
+      "head_ref_oid": "b1a6976dcdc03a6f5309368c423a45d911e1f3a9",
+      "merged_at": "2026-09-15T18:41:33Z",
+      "number": 15032,
+      "repo": "pytest-dev/pytest",
+      "source_files": [
+        "src/_pytest/config/argparsing.py",
+        "src/_pytest/helpconfig.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "testing/test_helpconfig.py",
+        "testing/test_parseopt.py"
+      ],
+      "title": "config: preserve indentation and blank lines in help texts",
+      "url": "https://github.com/pytest-dev/pytest/pull/15032"
+    },
+    {
+      "additions": 409,
+      "base_ref_oid": "ff42276a55b99a315c304db882edf0e69de9fae3",
+      "body_excerpt": "This was explored and written by an AI agent (Claude Opus 5 via Claude Code) that I prompted. The diagnosis, the patches, the tests and this description are its work; I read it, reproduced it and am posting it.\n\nCloses #15005.\n\nA cleanup pass over `pytest.approx`, starting from #15005 and following the same mistake through the module. Five commits, each standalone with its own changelog fragment \u2014 reviewable and revertable one at a time.\n\n`Decimal` and `float` meet in `_pytest/approx.py` in two ways, and only one is lossy:\n\n* **`float(Decimal)` saturates.** `float(Decimal(\"1e400\"))` is `inf` and `float(Decimal(\"1e-400\"))` is `0.0`, silently. Every `math.*` call on a Decimal takes this route.\n* **Comparing a `Decimal` to a `float` is exact.** CPython compares true values (`Decimal(\"0.1\") < 0.1` is correctly `True`). Safe arithmetically; it only signals `decimal.FloatOperation` when that trap is set.\n\n## 1. `nan`/`inf` checks \u2014 closes #15005\n\n`math.isnan`/`math.isinf` take the lossy route, so `approx()` treated a finite `Decimal(\"1e400\")` as infinite and short-circuited before the exact Decimal tolerance was used:\n\n```pycon\n>>> Decimal(\"1.0000001e400\") == pytest.approx(Decimal(\"1e400\"), rel=Decimal(\"1e-6\"))\nFalse   # difference 1E+393, tolerance 1E+394\n```\n\nFive sites, not just the infinity guard the issue names: the same guard in `__repr__`, the NaN checks in `__eq__` (which also raised `ValueError` on `Decimal(\"sNaN\")`), and both NaN validations in `tolerance`. Fixed with `_is_nan`/`_is_inf` helpers using `Decimal.is_nan()`/`Decimal.is_infinite()`. No change for `float`/`co",
+      "changed_file_count": 10,
+      "deletions": 45,
+      "head_ref_oid": "bccb2f20feb0f985a23bd75b721de85cc8132567",
+      "merged_at": "2026-09-13T13:07:29Z",
+      "number": 15006,
+      "repo": "pytest-dev/pytest",
+      "source_files": [
+        "src/_pytest/approx.py",
+        "src/_pytest/warning_types.py",
+        "src/pytest/__init__.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "testing/python/approx.py"
+      ],
+      "title": "approx: Decimal and numpy cleanup",
+      "url": "https://github.com/pytest-dev/pytest/pull/15006"
+    },
+    {
+      "additions": 101,
+      "base_ref_oid": "a453d653f92bfbdbfe47d2af9bfd8801860ff9e3",
+      "body_excerpt": "solves #14552 \r\n\r\n<!--\r\nThanks for submitting a PR, your contribution is really appreciated!\r\n\r\nHere is a quick checklist that should be present in PRs.\r\n\r\n- [ ] Include documentation when adding new features.\r\n- [ ] Include new tests or update existing tests when applicable.\r\n- [X] Allow maintainers to push and squash when merging my commits. Please uncheck this if you prefer to squash the commits yourself.\r\n\r\nIf this change fixes an issue, please:\r\n\r\n- [ ] Add text like ``closes #XYZW`` to the PR description and/or commits (where ``XYZW`` is the issue number). See the [github docs](https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) for more information.\r\n\r\n> [!IMPORTANT]\r\n> **Unsupervised agentic contributions are not accepted**. See our [AI/LLM-Assisted Contributions Policy](https://github.com/pytest-dev/pytest/blob/main/CONTRIBUTING.rst#aillm-assisted-contributions-policy).\r\n\r\n- [ ] If AI agents were used, they are credited in `Co-authored-by` commit trailers.\r\n\r\nUnless your change is trivial or a small documentation fix (e.g., a typo or reword of a small section) please:\r\n\r\n- [ ] Create a new changelog file in the `changelog` directory, with a name like `<ISSUE NUMBER>.<TYPE>.rst`. See [changelog/README.rst](https://github.com/pytest-dev/pytest/blob/main/changelog/README.rst) for details.\r\n\r\n  Write sentences in the **past or present tense**, examples:\r\n\r\n  * *Improved verbose diff output with sequences.*\r\n  * *Terminal summary statistics now use multiple colors.*\r\n\r\n  Al",
+      "changed_file_count": 3,
+      "deletions": 0,
+      "head_ref_oid": "3261273a1f5ec51d75f5744bab41ca243d84942a",
+      "merged_at": "2026-09-16T05:50:51Z",
+      "number": 14989,
+      "repo": "pytest-dev/pytest",
+      "source_files": [
+        "src/_pytest/assertion/rewrite.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "testing/test_assertrewrite.py"
+      ],
+      "title": "fix: bytecode cache invalidation for moved test files (#14552)",
+      "url": "https://github.com/pytest-dev/pytest/pull/14989"
+    },
+    {
+      "additions": 150,
+      "base_ref_oid": "3fd8675d6d798507c06cf9c60753be6d9d7b0e17",
+      "body_excerpt": "This PR fixes #14942.\r\n\r\n### The commits\r\n\r\nThe 1st and 2nd commits are related internal documentation fixes.\r\n\r\nThe 3rd commit is a little refactor to encapsulate access to `FixtureManager._arg2fixturedef` to make the next commit clearer.\r\n\r\nThe 4th commit is main change, I reproduce the commit message below.\r\n\r\nThe 5th commit adds backward compat for string nodeids in `register_fixture`. I split it from the previous commit to make it easier to review the main change without the ugly compat. I will squash it before merging.\r\n\r\n### Description\r\n\r\nPreviously, FixtureManager stored the registered FixtureDefs in `_arg2fixturedefs` which is\r\n\r\n    <fixutre name> -> [FixtureDef]\r\n\r\nwhere the FixtureDefs are ordered by visibility.\r\n\r\nThere are two inefficiencies with this:\r\n1. When registering a fixture, we need to find the appropriate index to insert in the list. This is done with slow quadratic `is_visibility_more_specific` checks.\r\n\r\n   Before 7186cd46553a14bfc1ee0e6e77e5daa6c3882bd4, FixtureDefs were always appended, relying on the collection order, so there was no quadratic issue. But then we added `pytest.register_fixture` which is not guaranteed to be called in collection order.\r\n\r\n   This is #14942, introduced in v9.1.0.\r\n\r\n2. When looking up FixtureDefs for a node, the entire list needed to be filtered for visibility to the node (`_matchfactories`). With many fixtures registered with the same name (even if completely unrelated), this can be slow.\r\n\r\n   This is an old issue.\r\n\r\nChange the way we store the FixtureDefs to `_arg2node2fixturedefs`, which is\r\n\r\n    <fixture na",
+      "changed_file_count": 5,
+      "deletions": 73,
+      "head_ref_oid": "aeb5b3ebd4b1f218f1114b9a1c2e003a291f8255",
+      "merged_at": "2026-09-14T08:24:52Z",
+      "number": 14984,
+      "repo": "pytest-dev/pytest",
+      "source_files": [
+        "src/_pytest/fixtures.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "testing/deprecated_test.py",
+        "testing/python/fixtures.py"
+      ],
+      "title": "fixtures: use a better data structure for storing FixtureDefs",
+      "url": "https://github.com/pytest-dev/pytest/pull/14984"
+    },
+    {
+      "additions": 62,
+      "base_ref_oid": "68989ae47d9fd10381a3859619a3880014d187f6",
+      "body_excerpt": "* `HTTPParser.complete` -> `.reset`.\r\n* Add `HTTPParser.is_keepalive` API.\r\n* Clean exits on `KeyboardInterupt`.",
+      "changed_file_count": 8,
+      "deletions": 27,
+      "head_ref_oid": "a711667febc881914bd117d6e86dfbf0b91c9f47",
+      "merged_at": "2025-09-20T17:09:09Z",
+      "number": 3673,
+      "repo": "encode/httpx",
+      "source_files": [
+        "src/ahttpx/_parsers.py",
+        "src/ahttpx/_pool.py",
+        "src/ahttpx/_server.py",
+        "src/httpx/_network.py",
+        "src/httpx/_parsers.py",
+        "src/httpx/_pool.py",
+        "src/httpx/_server.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_parsers.py"
+      ],
+      "title": "Connection resets",
+      "url": "https://github.com/encode/httpx/pull/3673"
+    },
+    {
+      "additions": 62,
+      "base_ref_oid": "4acf5c2c37714cc63b5cf71b3e284fca83c90311",
+      "body_excerpt": "* Add `HTTPParser.keep_alive`.\r\n* Server... always read request to completion on keep alives.\r\n* `HTTPParser.complete` -> `.reset`\r\n* Close streams on server exit.\r\n* Don't raise `KeyboardException` on server exit.",
+      "changed_file_count": 8,
+      "deletions": 27,
+      "head_ref_oid": "a711667febc881914bd117d6e86dfbf0b91c9f47",
+      "merged_at": "2025-09-19T11:03:13Z",
+      "number": 3672,
+      "repo": "encode/httpx",
+      "source_files": [
+        "src/ahttpx/_parsers.py",
+        "src/ahttpx/_pool.py",
+        "src/ahttpx/_server.py",
+        "src/httpx/_network.py",
+        "src/httpx/_parsers.py",
+        "src/httpx/_pool.py",
+        "src/httpx/_server.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_parsers.py"
+      ],
+      "title": "Server connection handling.",
+      "url": "https://github.com/encode/httpx/pull/3672"
+    },
+    {
+      "additions": 39,
+      "base_ref_oid": "f9d5e1204978c0c66666fa169edada1bf719f8ba",
+      "body_excerpt": "Fix up server `File` responses...\r\n\r\n```python\r\nimport httpx\r\n\r\ndef app(request):\r\n    return httpx.Response(200, content=httpx.File(\"index.html\"))\r\n\r\nhttpx.run(app)\r\n```",
+      "changed_file_count": 5,
+      "deletions": 61,
+      "head_ref_oid": "6ee7a36f3462107f618712c6ba198662b3b2c168",
+      "merged_at": "2025-09-18T12:15:06Z",
+      "number": 3670,
+      "repo": "encode/httpx",
+      "source_files": [
+        "src/ahttpx/_content.py",
+        "src/ahttpx/_streams.py",
+        "src/httpx/_content.py",
+        "src/httpx/_streams.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_streams.py"
+      ],
+      "title": "Update FileStream API",
+      "url": "https://github.com/encode/httpx/pull/3670"
+    },
+    {
+      "additions": 9,
+      "base_ref_oid": "89102021fcb44f6c3fab6304e5f951692723c908",
+      "body_excerpt": "<!-- Thanks for contributing to HTTPX! \ud83d\udc9a\r\nGiven this is a project maintained by volunteers, please read this template to not waste your time, or ours! \ud83d\ude01 -->\r\n\r\n# Summary\r\n\r\n<!-- Write a small summary about what is happening here. -->\r\n\r\nUnblocks #3648 which is currently failing on the command [`ruff format`](https://docs.astral.sh/ruff/formatter).\r\n* #3648 \r\n* https://github.com/astral-sh/ruff/releases\r\n\r\n# Checklist\r\n\r\n- [x] I understand that this PR may be closed in case there was no previous discussion. (This doesn't apply to typos!)\r\n- [ ] I've added a test for each change that was introduced, and I tried as much as possible to make a single atomic change.\r\n- [ ] I've updated the documentation accordingly.\r\n",
+      "changed_file_count": 4,
+      "deletions": 11,
+      "head_ref_oid": "927b5ac58942eb0f6dfdc3e0b90cac0d3bc9ae8e",
+      "merged_at": "2025-09-03T11:17:26Z",
+      "number": 3651,
+      "repo": "encode/httpx",
+      "source_files": [
+        "httpx/_exceptions.py",
+        "httpx/_urls.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_content.py"
+      ],
+      "title": "Upgrade Python formatter ruff",
+      "url": "https://github.com/encode/httpx/pull/3651"
+    },
+    {
+      "additions": 26,
+      "base_ref_oid": "189fc4bcbe5f314128775dec66a616ac9a31ad48",
+      "body_excerpt": "Closes #3411.",
+      "changed_file_count": 5,
+      "deletions": 5,
+      "head_ref_oid": "3b9b2b325e5ee5f510e047c6a8775b7b45ee5a17",
+      "merged_at": "2024-11-22T11:42:51Z",
+      "number": 3412,
+      "repo": "encode/httpx",
+      "source_files": [
+        "httpx/__version__.py",
+        "httpx/_decoders.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_decoders.py"
+      ],
+      "title": "Handle empty zstd responses",
+      "url": "https://github.com/encode/httpx/pull/3412"
+    },
+    {
+      "additions": 155,
+      "base_ref_oid": "41597adffa9d34171a63f7511fc0f702558dd08c",
+      "body_excerpt": "Suggested upgrade path for an upcoming 0.28 release...\r\n\r\nWe *do* have some backwards incompatible changes that we want to issue, but clearly need to minimise disruption to our userbase. Here's what we're currently looking at...\r\n\r\n---\r\n\r\n# Release Notes\r\n\r\nThe 0.28 release includes a limited set of backwards incompatible changes.\r\n\r\n## Backwards incompatible changes\r\n\r\nSSL configuration has been significantly simplified.\r\n\r\n* The `verify` argument no longer accepts string arguments for custom verify paths.\r\n* The `cert` argument has now been removed.\r\n* The `SSL_CERT_FILE` and `SSL_CERT_DIR` environment variables are no longer automatically used.\r\n\r\nFor users of the standard `verify=True` or `verify=False` cases this should require no changes.\r\n\r\nFor information on configuring more complex SSL cases, please see the [SSL documentation](https://github.com/encode/httpx/blob/graceful-upgrade-path/docs/advanced/ssl.md).\r\n\r\n## Other updates\r\n\r\n* The undocumented `URL.raw` property has now been deprecated, and will raise warnings. (#3394)\r\n* The deprecated `proxies` argument has now been removed. (#3319)\r\n* The deprecated `app` argument has now been removed. (#3319)\r\n* Ensure JSON request bodies are compact. (#3363)\r\n* Review URL percent escape sets, based on WHATWG spec. (#3371, #3373)\r\n* Ensure `certifi` and `httpcore` are only imported if required. (#3377)\r\n* Treat `socks5h` as a valid proxy scheme. (#3178)\r\n* Cleanup `Request()` method signature in line with `client.request()` and `httpx.request()`. (#3378)\r\n",
+      "changed_file_count": 11,
+      "deletions": 434,
+      "head_ref_oid": "0f9cd3fdf3c73e217b9f78c304aa266163245da8",
+      "merged_at": "2024-11-12T11:31:42Z",
+      "number": 3394,
+      "repo": "encode/httpx",
+      "source_files": [
+        "httpx/__init__.py",
+        "httpx/_api.py",
+        "httpx/_client.py",
+        "httpx/_config.py",
+        "httpx/_main.py",
+        "httpx/_transports/default.py",
+        "httpx/_urls.py"
+      ],
+      "split": "calibration",
+      "test_files": [
+        "tests/test_config.py"
+      ],
+      "title": "Graceful upgrade path for 0.28.",
+      "url": "https://github.com/encode/httpx/pull/3394"
+    },
+    {
+      "additions": 55,
+      "base_ref_oid": "3a799fd70127aba17895e891b61d27a4340ff13c",
+      "body_excerpt": "- [x] I have read the [contributing guide](https://docs.scrapy.org/en/master/contributing.html) and [set up pre-commit](https://docs.scrapy.org/en/master/contributing.html#pre-commit).\r\n",
+      "changed_file_count": 6,
+      "deletions": 73,
+      "head_ref_oid": "04a00ae5196bcb3c34b6ed8e8390ecfe5ad42d80",
+      "merged_at": "2026-09-18T11:21:38Z",
+      "number": 8179,
+      "repo": "scrapy/scrapy",
+      "source_files": [
+        "scrapy/commands/shell.py",
+        "scrapy/core/engine.py",
+        "scrapy/shell.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_command_shell.py",
+        "tests/test_engine.py",
+        "tests/test_extension_memusage.py"
+      ],
+      "title": "Don't start the engine in the shell. ",
+      "url": "https://github.com/scrapy/scrapy/pull/8179"
+    },
+    {
+      "additions": 49,
+      "base_ref_oid": "42030b24da52ecf869c7dc43603f18a42a64b333",
+      "body_excerpt": "Also disable the telnet console there.\r\n\r\n- [x] I have read the [contributing guide](https://docs.scrapy.org/en/master/contributing.html) and [set up pre-commit](https://docs.scrapy.org/en/master/contributing.html#pre-commit).\r\n",
+      "changed_file_count": 4,
+      "deletions": 52,
+      "head_ref_oid": "e4ce462c312d2b79efdb5cc93f0fd14c94d48a1e",
+      "merged_at": "2026-09-17T15:09:11Z",
+      "number": 8176,
+      "repo": "scrapy/scrapy",
+      "source_files": [
+        "scrapy/commands/shell.py",
+        "scrapy/shell.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_command_shell.py"
+      ],
+      "title": "Switch the shell to download_async()",
+      "url": "https://github.com/scrapy/scrapy/pull/8176"
+    },
+    {
+      "additions": 6,
+      "base_ref_oid": "991a29e19ffbd13869c8dfd2d318b1a0bc504de8",
+      "body_excerpt": "This makes a difference for the shell refactoring but shouldn't make a difference otherwise.\r\n\r\n- [x] I have read the [contributing guide](https://docs.scrapy.org/en/master/contributing.html) and [set up pre-commit](https://docs.scrapy.org/en/master/contributing.html#pre-commit).\r\n",
+      "changed_file_count": 3,
+      "deletions": 6,
+      "head_ref_oid": "55aae1fb7c33ab67e927ec6029fdec013d350632",
+      "merged_at": "2026-09-17T11:38:24Z",
+      "number": 8174,
+      "repo": "scrapy/scrapy",
+      "source_files": [
+        "scrapy/downloadermiddlewares/redirect.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_downloadermiddleware_redirect.py",
+        "tests/test_downloadermiddleware_redirect_metarefresh.py"
+      ],
+      "title": "Init redirect middlewares in spider_opened instead of engine_started.",
+      "url": "https://github.com/scrapy/scrapy/pull/8174"
+    },
+    {
+      "additions": 174,
+      "base_ref_oid": "991a29e19ffbd13869c8dfd2d318b1a0bc504de8",
+      "body_excerpt": "Resolves https://github.com/scrapy/scrapy/issues/7823.\r\n\r\n- [x] I have read the [contributing guide](https://docs.scrapy.org/en/master/contributing.html) and [set up pre-commit](https://docs.scrapy.org/en/master/contributing.html#pre-commit).\r\n",
+      "changed_file_count": 4,
+      "deletions": 22,
+      "head_ref_oid": "1eee7b93bc94f796dfe6916dbaaeb3394672f3a3",
+      "merged_at": "2026-09-17T11:48:05Z",
+      "number": 8173,
+      "repo": "scrapy/scrapy",
+      "source_files": [
+        "scrapy/extensions/feedexport.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_feedexport_storages.py",
+        "tests/utils/cloud.py"
+      ],
+      "title": "Support appending to GCS feeds via composite objects",
+      "url": "https://github.com/scrapy/scrapy/pull/8173"
+    },
+    {
+      "additions": 12,
+      "base_ref_oid": "cdc5a754d0b388d8e0ef1630411e48e496741f9c",
+      "body_excerpt": "https://github.com/scrapy/itemadapter/pull/125#issuecomment-5712706663.\r\n\r\n- [x] I have read the [contributing guide](https://docs.scrapy.org/en/master/contributing.html) and [set up pre-commit](https://docs.scrapy.org/en/master/contributing.html#pre-commit).\r\n",
+      "changed_file_count": 2,
+      "deletions": 0,
+      "head_ref_oid": "884271fd15dd6bd01c44752de6abf5a9c5efad14",
+      "merged_at": "2026-09-17T10:42:59Z",
+      "number": 8172,
+      "repo": "scrapy/scrapy",
+      "source_files": [
+        "scrapy/item.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_item.py"
+      ],
+      "title": "Make copy.copy() work on Item",
+      "url": "https://github.com/scrapy/scrapy/pull/8172"
+    },
+    {
+      "additions": 29,
+      "base_ref_oid": "7bb73721936ded2eba4d343cb25c40802e36b8b8",
+      "body_excerpt": "Found when working on #6916.\r\n\r\nBefore, if the scheduler init failed, the flow went to `close_async()` -> `close_spider_async()` and raised an exception there, because `close_spider_async()` expects that both `self.spider is not None` (already true) and `self._slot is not None` (not yet true, it requires the scheduler so it was created on the next line). Now it doesn't go into `close_spider_async()`.\r\n\r\n- [x] I have read the [contributing guide](https://docs.scrapy.org/en/master/contributing.html) and [set up pre-commit](https://docs.scrapy.org/en/master/contributing.html#pre-commit).\r\n",
+      "changed_file_count": 2,
+      "deletions": 1,
+      "head_ref_oid": "d7653521250499f650e3d22a92bc7463c91b3c65",
+      "merged_at": "2026-09-17T07:52:26Z",
+      "number": 8169,
+      "repo": "scrapy/scrapy",
+      "source_files": [
+        "scrapy/core/engine.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_engine.py"
+      ],
+      "title": "Build the scheduler before assigning engine.spider.",
+      "url": "https://github.com/scrapy/scrapy/pull/8169"
+    },
+    {
+      "additions": 39,
+      "base_ref_oid": "4e97e0abaf5c980ff04558323974c72757baa46f",
+      "body_excerpt": "### Description\n\nFixes #12877.\n\nThis documents how to use `quoted_name(..., quote=False)` with PostgreSQL `postgresql_inherits` when the parent table name is schema-qualified, so the dotted name is not quoted as a single identifier.\n\nIt also updates the `quoted_name` docs to refer to `Inspector.has_table` instead of the old `Engine.has_table` reference, and adds a compiler test for the `postgresql_inherits` rendering.\n\n### Checklist\n\nThis pull request is:\n\n- [x] A documentation / typographical / small typing error fix\n- [ ] A short code fix\n- [ ] A new feature implementation\n\n### Tests\n\n- `pytest test/dialect/postgresql/test_compiler.py -q -k 'inherits'`\n- `python -m py_compile lib/sqlalchemy/dialects/postgresql/base.py lib/sqlalchemy/sql/elements.py test/dialect/postgresql/test_compiler.py`\n- `git diff --check`\n",
+      "changed_file_count": 3,
+      "deletions": 3,
+      "head_ref_oid": "1b9224b22cc39aa0bbdb0770c452ca2e789705a2",
+      "merged_at": "2026-06-11T21:19:16Z",
+      "number": 13342,
+      "repo": "sqlalchemy/sqlalchemy",
+      "source_files": [
+        "lib/sqlalchemy/dialects/postgresql/base.py",
+        "lib/sqlalchemy/sql/elements.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "test/dialect/postgresql/test_compiler.py"
+      ],
+      "title": "Document quoted_name use with PostgreSQL INHERITS",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13342"
+    },
+    {
+      "additions": 5,
+      "base_ref_oid": "f353f623271087bfe47f4b7271b35578046c59b5",
+      "body_excerpt": "### Checklist\r\n\r\nThis pull request is:\r\n\r\n- [x] A documentation / typographical / small typing error fix\r\n\t- Good to go, no issue or tests are needed\r\n- [ ] A short code fix\r\n\t- please include the issue number, and create an issue if none exists, which\r\n\t  must include a complete example of the issue.  one line code fixes without an\r\n\t  issue and demonstration will not be accepted.\r\n\t- Please include: `Fixes: #<issue number>` in the commit message\r\n\t- please include tests.   one line code fixes without tests will not be accepted.\r\n- [ ] A new feature implementation\r\n\t- please include the issue number, and create an issue if none exists, which must\r\n\t  include a complete example of how the feature would look.\r\n\t- Please include: `Fixes: #<issue number>` in the commit message\r\n\t- please include tests.",
+      "changed_file_count": 3,
+      "deletions": 5,
+      "head_ref_oid": "7cd7791258c516a56fded329a31d3521de1a5fe1",
+      "merged_at": "2026-05-05T19:01:21Z",
+      "number": 13277,
+      "repo": "sqlalchemy/sqlalchemy",
+      "source_files": [
+        "lib/sqlalchemy/log.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "test/engine/test_logging.py"
+      ],
+      "title": "Replace logging.WARN by logging.WARNING",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13277"
+    },
+    {
+      "additions": 2,
+      "base_ref_oid": "b668fad821c08fd9b8420072ec8241e9cb5074a1",
+      "body_excerpt": "<!-- Provide a general summary of your proposed changes in the Title field above -->\r\n\r\n### Description\r\nFixes a typo in SAWarning emitted from automatic autoflush.\r\n\r\n### Checklist\r\n<!-- go over following points. check them with an `x` if they do apply, (they turn into clickable checkboxes once the PR is submitted, so no need to do everything at once)\r\n\r\n-->\r\n\r\nThis pull request is:\r\n\r\n- [x] A documentation / typographical / small typing error fix\r\n\t- Good to go, no issue or tests are needed\r\n- [ ] A short code fix\r\n\t- please include the issue number, and create an issue if none exists, which\r\n\t  must include a complete example of the issue.  one line code fixes without an\r\n\t  issue and demonstration will not be accepted.\r\n\t- Please include: `Fixes: #<issue number>` in the commit message\r\n\t- please include tests.   one line code fixes without tests will not be accepted.\r\n- [ ] A new feature implementation\r\n\t- please include the issue number, and create an issue if none exists, which must\r\n\t  include a complete example of how the feature would look.\r\n\t- Please include: `Fixes: #<issue number>` in the commit message\r\n\t- please include tests.\r\n\r\n**Have a nice day!**\r\n",
+      "changed_file_count": 2,
+      "deletions": 2,
+      "head_ref_oid": "e15db4bd73bb8d394c148cb12b84e91ab213bdd3",
+      "merged_at": "2025-07-02T21:20:47Z",
+      "number": 12713,
+      "repo": "sqlalchemy/sqlalchemy",
+      "source_files": [
+        "lib/sqlalchemy/orm/session.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "test/orm/test_utils.py"
+      ],
+      "title": "chore: Fix typo in autoflush SAWarning",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12713"
+    },
+    {
+      "additions": 3,
+      "base_ref_oid": "b7c81ae238778abbf7cb8ee7552f1b160e750cc4",
+      "body_excerpt": "### Description\r\nI have fixed the spelling of \"polymorphic\" in the documentation, a comment and a test class name. \r\n\r\n### Checklist\r\n<!-- go over following points. check them with an `x` if they do apply, (they turn into clickable checkboxes once the PR is submitted, so no need to do everything at once)\r\n\r\n-->\r\n\r\nThis pull request is:\r\n\r\n- [x] A documentation / typographical / small typing error fix\r\n\t- Good to go, no issue or tests are needed\r\n- [ ] A short code fix\r\n\t- please include the issue number, and create an issue if none exists, which\r\n\t  must include a complete example of the issue.  one line code fixes without an\r\n\t  issue and demonstration will not be accepted.\r\n\t- Please include: `Fixes: #<issue number>` in the commit message\r\n\t- please include tests.   one line code fixes without tests will not be accepted.\r\n- [ ] A new feature implementation\r\n\t- please include the issue number, and create an issue if none exists, which must\r\n\t  include a complete example of how the feature would look.\r\n\t- Please include: `Fixes: #<issue number>` in the commit message\r\n\t- please include tests.\r\n\r\n**Have a nice day!**\r\n",
+      "changed_file_count": 3,
+      "deletions": 3,
+      "head_ref_oid": "7675029a1c0377ff23e43790220859fee6b32a4e",
+      "merged_at": "2025-02-03T18:56:55Z",
+      "number": 12307,
+      "repo": "sqlalchemy/sqlalchemy",
+      "source_files": [
+        "lib/sqlalchemy/orm/path_registry.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "test/orm/test_core_compilation.py"
+      ],
+      "title": "Fix 'polymorphic' typo in a few places",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12307"
+    },
+    {
+      "additions": 42,
+      "base_ref_oid": "ec16a5785b89b277a027e5bc6203d15e6620c7e0",
+      "body_excerpt": "https://github.com/python-pillow/Pillow/pull/9519 covered an infinite loop from a trailer chain.\r\n\r\nThis covers a trailer chain that is not infinite, but long enough to still trigger a RecursionError.",
+      "changed_file_count": 2,
+      "deletions": 18,
+      "head_ref_oid": "c916f7c42dceacf47da558b9c6f54a7f72700bc1",
+      "merged_at": "2026-09-18T12:36:33Z",
+      "number": 10023,
+      "repo": "python-pillow/Pillow",
+      "source_files": [
+        "src/PIL/PdfParser.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "Tests/test_pdfparser.py"
+      ],
+      "title": "Use while loop in read_prev_trailer() to avoid RecursionError",
+      "url": "https://github.com/python-pillow/Pillow/pull/10023"
+    },
+    {
+      "additions": 20,
+      "base_ref_oid": "c4585e5326a633098f5f738178a4d78e98ce7ce9",
+      "body_excerpt": "Fixes regression from https://github.com/python-pillow/Pillow/pull/10012.\r\n",
+      "changed_file_count": 2,
+      "deletions": 5,
+      "head_ref_oid": "45eb36ca9a51ef109e2ce25ca7a593d8fdd874eb",
+      "merged_at": "2026-09-18T03:59:11Z",
+      "number": 10014,
+      "repo": "python-pillow/Pillow",
+      "source_files": [
+        "src/PIL/TarIO.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "Tests/test_file_tar.py"
+      ],
+      "title": "Allow zero-length members in tar files",
+      "url": "https://github.com/python-pillow/Pillow/pull/10014"
+    },
+    {
+      "additions": 24,
+      "base_ref_oid": "c4585e5326a633098f5f738178a4d78e98ce7ce9",
+      "body_excerpt": "Only RGB, RGBA and CMYK are supported palette modes.\r\nhttps://github.com/python-pillow/Pillow/blob/c4585e5326a633098f5f738178a4d78e98ce7ce9/src/libImaging/Palette.c#L30-L33\r\n\r\nThis PR\r\n- documents those modes\r\n- improves handling of incorrect modes in C\r\n- adds a check when the Python `imagePalette` is initialised to catch the problem early",
+      "changed_file_count": 3,
+      "deletions": 3,
+      "head_ref_oid": "662afffc6218e7003f14124fc18593aea43d94eb",
+      "merged_at": "2026-09-17T11:27:55Z",
+      "number": 10013,
+      "repo": "python-pillow/Pillow",
+      "source_files": [
+        "src/PIL/ImagePalette.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "Tests/test_imagepalette.py"
+      ],
+      "title": "Raise error when creating ImagePalette with unsupported mode",
+      "url": "https://github.com/python-pillow/Pillow/pull/10013"
+    },
+    {
+      "additions": 19,
+      "base_ref_oid": "80de4be9e38d3a6148dd4d8491eb80cd12b760a4",
+      "body_excerpt": "",
+      "changed_file_count": 2,
+      "deletions": 1,
+      "head_ref_oid": "60904dfd84c4addbf594f3d3dc7a26601bb45865",
+      "merged_at": "2026-09-17T09:56:45Z",
+      "number": 10012,
+      "repo": "python-pillow/Pillow",
+      "source_files": [
+        "src/PIL/TarIO.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "Tests/test_file_tar.py"
+      ],
+      "title": "Offset to next TAR block must be positive",
+      "url": "https://github.com/python-pillow/Pillow/pull/10012"
+    },
+    {
+      "additions": 58,
+      "base_ref_oid": "34f59a90c272626e2abbdec3ca504fb00a58f54a",
+      "body_excerpt": "",
+      "changed_file_count": 6,
+      "deletions": 0,
+      "head_ref_oid": "77521ad5baf3fe4a4a4d80c057235fcc45d314ce",
+      "merged_at": "2026-09-17T09:44:27Z",
+      "number": 10011,
+      "repo": "python-pillow/Pillow",
+      "source_files": [
+        "src/PIL/DcxImagePlugin.py",
+        "src/PIL/MicImagePlugin.py",
+        "src/PIL/MpoImagePlugin.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "Tests/test_file_dcx.py",
+        "Tests/test_file_mic.py",
+        "Tests/test_file_mpo.py"
+      ],
+      "title": "Add decompression bomb checks after seek opens new format",
+      "url": "https://github.com/python-pillow/Pillow/pull/10011"
+    },
+    {
+      "additions": 4,
+      "base_ref_oid": "7e57b6c94bad3b44516bb2c606526ea18300b080",
+      "body_excerpt": "As a consequence of https://github.com/python-pillow/Pillow/pull/9985, `data` no longer needs to be converted to bytes here.\r\nhttps://github.com/python-pillow/Pillow/blob/7e57b6c94bad3b44516bb2c606526ea18300b080/src/PIL/Image.py#L2170-L2172\r\nBefore #9985, this change would have caused test failures from `load()`\r\nhttps://github.com/python-pillow/Pillow/blob/7e57b6c94bad3b44516bb2c606526ea18300b080/src/PIL/Image.py#L989-L990\r\n\r\nBut no longer.\r\n\r\nAlso, given that the default `ImagePalette` `mode` is RGB, this is unnecessary.\r\nhttps://github.com/python-pillow/Pillow/blob/7e57b6c94bad3b44516bb2c606526ea18300b080/src/PIL/Image.py#L2179-L2180",
+      "changed_file_count": 4,
+      "deletions": 12,
+      "head_ref_oid": "054a361a0a75a525615cff9e551285ca1eabe3a0",
+      "merged_at": "2026-09-17T07:46:55Z",
+      "number": 10003,
+      "repo": "python-pillow/Pillow",
+      "source_files": [
+        "src/PIL/FliImagePlugin.py",
+        "src/PIL/Image.py",
+        "src/PIL/TiffImagePlugin.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "Tests/test_image.py"
+      ],
+      "title": "Simplify palette code",
+      "url": "https://github.com/python-pillow/Pillow/pull/10003"
+    },
+    {
+      "additions": 6,
+      "base_ref_oid": "7b15a786a755ec4089a34c9bb5f957f8b8ce3690",
+      "body_excerpt": "\r\n\r\n<!-- Thank you for your contribution! -->\r\n<!-- Unless your change is trivial, please create an issue to discuss the change before creating a PR -->\r\n\r\n## Change Summary\r\n\r\nFixes https://github.com/pydantic/pydantic/issues/13802. Main problem tracked in https://github.com/pydantic/pytest-examples/issues/82.\r\n\r\n<!-- Please give a short summary of the changes. -->\r\n\r\n## Related issue number\r\n\r\n<!-- WARNING: please use \"fix #123\" style references so the issue is closed when this PR is merged. -->\r\n\r\n## Checklist\r\n\r\n* [ ] The pull request title is a good summary of the changes - it will be used in the changelog\r\n* [ ] Unit tests for the changes exist\r\n* [ ] Tests pass on CI\r\n* [ ] Documentation reflects the changes where applicable\r\n* [ ] My PR is ready to review, **please add a comment including the phrase \"please review\" to assign reviewers**\r\n",
+      "changed_file_count": 6,
+      "deletions": 33,
+      "head_ref_oid": "d64fdcdc65ec935151a70c0a0eeda16d061b7ffd",
+      "merged_at": "2026-09-16T21:16:02Z",
+      "number": 13821,
+      "repo": "pydantic/pydantic",
+      "source_files": [
+        "pydantic-core/python/pydantic_core/core_schema.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "pydantic-core/tests/test_errors.py"
+      ],
+      "title": "Fix documentation examples not raising and remove unused `string_sub_type` unused error code",
+      "url": "https://github.com/pydantic/pydantic/pull/13821"
+    },
+    {
+      "additions": 236,
+      "base_ref_oid": "6312eb1578d89242b63a27f37ff5ba54bf016085",
+      "body_excerpt": "<!-- Thank you for your contribution! -->\r\n<!-- Unless your change is trivial, please create an issue to discuss the change before creating a PR -->\r\n\r\n## Change Summary\r\n\r\nFixes https://github.com/pydantic/pydantic/issues/12960.\r\n\r\nWhen https://github.com/pydantic/pydantic-core/pull/1235 was introduced, it never called the enum class at all, so the `_missing_()` method had to be manually passed in the core schema. https://github.com/pydantic/pydantic-core/pull/1456 then changed the behavior to call the enum constructor as a fallback (but only in Python mode, what this PR fixes by widening to JSON). As the enum constructor takes care of calling `_missing_()` already, there's no need to have it manually set in the core schema anymore.\r\n\r\nAlso update deprecation warnings for existing deprecations in `core_schema.py`.\r\n\r\n<!-- Please give a short summary of the changes. -->\r\n\r\n## Related issue number\r\n\r\n<!-- WARNING: please use \"fix #123\" style references so the issue is closed when this PR is merged. -->\r\n\r\n## Checklist\r\n\r\n* [ ] The pull request title is a good summary of the changes - it will be used in the changelog\r\n* [ ] Unit tests for the changes exist\r\n* [ ] Tests pass on CI\r\n* [ ] Documentation reflects the changes where applicable\r\n* [ ] My PR is ready to review, **please add a comment including the phrase \"please review\" to assign reviewers**\r\n",
+      "changed_file_count": 6,
+      "deletions": 88,
+      "head_ref_oid": "b5f8c20d85086fc288f8948e60fd54c989d335a4",
+      "merged_at": "2026-09-11T07:44:57Z",
+      "number": 13792,
+      "repo": "pydantic/pydantic",
+      "source_files": [
+        "pydantic-core/python/pydantic_core/core_schema.py",
+        "pydantic/_internal/_generate_schema.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "pydantic-core/tests/test_schema_functions.py",
+        "pydantic-core/tests/validators/test_enums.py",
+        "tests/types/test_enum.py"
+      ],
+      "title": "Call enum constructors in both validation modes",
+      "url": "https://github.com/pydantic/pydantic/pull/13792"
+    },
+    {
+      "additions": 186,
+      "base_ref_oid": "e2683e14d3c449cc74cde3efc94bf19f4ee9d95f",
+      "body_excerpt": "<!-- Thank you for your contribution! -->\r\n<!-- Unless your change is trivial, please create an issue to discuss the change before creating a PR -->\r\n\r\n## Change Summary\r\n\r\nFixes https://github.com/pydantic/pydantic/issues/13780, and a couple of other spotted issues.\r\n\r\n<!-- Please give a short summary of the changes. -->\r\n\r\n## Related issue number\r\n\r\n<!-- WARNING: please use \"fix #123\" style references so the issue is closed when this PR is merged. -->\r\n\r\n## Checklist\r\n\r\n* [ ] The pull request title is a good summary of the changes - it will be used in the changelog\r\n* [ ] Unit tests for the changes exist\r\n* [ ] Tests pass on CI\r\n* [ ] Documentation reflects the changes where applicable\r\n* [ ] My PR is ready to review, **please add a comment including the phrase \"please review\" to assign reviewers**\r\n",
+      "changed_file_count": 5,
+      "deletions": 12,
+      "head_ref_oid": "3d6045bc63163c041b9c9412fcd24f2526a81ffb",
+      "merged_at": "2026-09-09T13:58:19Z",
+      "number": 13785,
+      "repo": "pydantic/pydantic",
+      "source_files": [
+        "pydantic/_internal/_decorators.py",
+        "pydantic/_internal/_namespace_utils.py",
+        "pydantic/main.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/conftest.py",
+        "tests/test_freethreaded.py"
+      ],
+      "title": "Fix race conditions in freethreaded build",
+      "url": "https://github.com/pydantic/pydantic/pull/13785"
+    },
+    {
+      "additions": 214,
+      "base_ref_oid": "78a5c4c6e27e18c2bcd18cb56d931d508571ef0d",
+      "body_excerpt": "<!-- Thank you for your contribution! -->\r\n<!-- Unless your change is trivial, please create an issue to discuss the change before creating a PR -->\r\n\r\n## Change Summary\r\n\r\nCloses https://github.com/pydantic/pydantic/issues/12090. The latest pyright version (1.1.413) does not contain the updated stubs for `typing_extensions` with `sentinel` instead of `Sentinel`, so we will need to replace it in a future release.\r\n\r\nAlso update documentation with some utility types, and include the sentinel documentation there.\r\n\r\n<!-- Please give a short summary of the changes. -->\r\n\r\n## Related issue number\r\n\r\n<!-- WARNING: please use \"fix #123\" style references so the issue is closed when this PR is merged. -->\r\n\r\n## Checklist\r\n\r\n* [ ] The pull request title is a good summary of the changes - it will be used in the changelog\r\n* [ ] Unit tests for the changes exist\r\n* [ ] Tests pass on CI\r\n* [ ] Documentation reflects the changes where applicable\r\n* [ ] My PR is ready to review, **please add a comment including the phrase \"please review\" to assign reviewers**\r\n",
+      "changed_file_count": 15,
+      "deletions": 96,
+      "head_ref_oid": "cc69ab7ecd0a382b11b9832fff9822ea71725b7b",
+      "merged_at": "2026-09-09T20:00:45Z",
+      "number": 13782,
+      "repo": "pydantic/pydantic",
+      "source_files": [
+        "pydantic-core/python/pydantic_core/__init__.py",
+        "pydantic/__init__.py",
+        "pydantic/experimental/missing_sentinel.py",
+        "pydantic/types.py",
+        "pydantic/warnings.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_missing_sentinel.py"
+      ],
+      "title": "Stabilize `MISSING` sentinel",
+      "url": "https://github.com/pydantic/pydantic/pull/13782"
+    },
+    {
+      "additions": 477,
+      "base_ref_oid": "1c8a330acc3077e77da64e3672c7c875fb4c6eaa",
+      "body_excerpt": "To achieve this, we refactor the `'missing-sentinel'` schema to have an inner core schema, like `'nullable'`\u00a0schemas.\u00a0\r\n\r\n<!-- Thank you for your contribution! -->\r\n<!-- Unless your change is trivial, please create an issue to discuss the change before creating a PR -->\r\n\r\n## Change Summary\r\n\r\nPart of https://github.com/pydantic/pydantic/issues/12090.\r\n\r\n",
+      "changed_file_count": 11,
+      "deletions": 93,
+      "head_ref_oid": "4670ff25422a19ac6b2d2af44395b79ed9b4cede",
+      "merged_at": "2026-09-09T07:22:37Z",
+      "number": 13779,
+      "repo": "pydantic/pydantic",
+      "source_files": [
+        "pydantic-core/python/pydantic_core/core_schema.py",
+        "pydantic/_internal/_discriminated_union.py",
+        "pydantic/_internal/_generate_schema.py",
+        "pydantic/json_schema.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "pydantic-core/tests/serializers/test_missing_sentinel.py",
+        "pydantic-core/tests/test_schema_functions.py",
+        "pydantic-core/tests/validators/test_missing_sentinel.py",
+        "tests/test_missing_sentinel.py"
+      ],
+      "title": "Do not mention `MISSING`\u00a0as a valid value in validation errors",
+      "url": "https://github.com/pydantic/pydantic/pull/13779"
+    },
+    {
+      "additions": 527,
+      "base_ref_oid": "2261ae19e2e09f792f06613360c83fc829238111",
+      "body_excerpt": "Also rework documentation about forward annotations\r\n\r\n<!-- Thank you for your contribution! -->\r\n<!-- Unless your change is trivial, please create an issue to discuss the change before creating a PR -->\r\n\r\n## Change Summary\r\n\r\nPart of https://github.com/pydantic/pydantic/issues/13173, requires https://github.com/python/cpython/pull/156940 to be released (will wait for the CPython PR to be merged, xfail tests and merge this one -- we won't be able to \"unxfail\" them until the final release).\r\n\r\n<!-- Please give a short summary of the changes. -->\r\n\r\n## Related issue number\r\n\r\n<!-- WARNING: please use \"fix #123\" style references so the issue is closed when this PR is merged. -->\r\n\r\n## Checklist\r\n\r\n* [ ] The pull request title is a good summary of the changes - it will be used in the changelog\r\n* [ ] Unit tests for the changes exist\r\n* [ ] Tests pass on CI\r\n* [ ] Documentation reflects the changes where applicable\r\n* [ ] My PR is ready to review, **please add a comment including the phrase \"please review\" to assign reviewers**\r\n",
+      "changed_file_count": 6,
+      "deletions": 177,
+      "head_ref_oid": "38b612c561cdff83cf53429539f72065900ab34f",
+      "merged_at": "2026-09-09T20:00:11Z",
+      "number": 13776,
+      "repo": "pydantic/pydantic",
+      "source_files": [
+        "pydantic/_internal/_typing_extra.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_lazy_imports.py"
+      ],
+      "title": "Add support for lazy imports",
+      "url": "https://github.com/pydantic/pydantic/pull/13776"
+    },
+    {
+      "additions": 183,
+      "base_ref_oid": "66b2c5a9b5ddf65f218423072ad158e42ed780aa",
+      "body_excerpt": "\ud83d\udc77 Update translation PR branches with PR Push\n\n## AI Disclaimer\n\nMade with the help of AI, using Codex with `gpt-5.6-sol`, manually reviewed.",
+      "changed_file_count": 5,
+      "deletions": 60,
+      "head_ref_oid": "e23eb44fa3f09382b98662154273a374db92cab9",
+      "merged_at": "2026-08-18T19:42:28Z",
+      "number": 16224,
+      "repo": "fastapi/fastapi",
+      "source_files": [
+        "scripts/translate.py",
+        "scripts/translation_git.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_translate.py"
+      ],
+      "title": "\ud83d\udc77 Update translation PR branches with PR Push",
+      "url": "https://github.com/fastapi/fastapi/pull/16224"
+    },
+    {
+      "additions": 43,
+      "base_ref_oid": "c1b618c559e6de70e5198ed6876f5b9fab88face",
+      "body_excerpt": "<!--\r\nThank you for creating this pull request and for spending time to help Sphinx!\r\nOur contributors' guide can be found online: https://www.sphinx-doc.org/en/master/internals/contributing.html\r\nAsk any questions at https://github.com/sphinx-doc/sphinx/discussions\r\n-->\r\n\r\n\r\n## Purpose\r\n\r\n<!--\r\nA description of the purpose of this pull request.\r\nEnsure that all relevant information is included for reviewers,\r\nincluding any environment-specific details.\r\n\r\n* If you plan to add tests or documentation after opening this PR,\r\n  please note it here.\r\n* For user-visible changes, remember to add an entry to CHANGES.rst.\r\n* Please add your name to AUTHORS.rst if you haven't already!\r\n-->\r\n\r\nBefore, there was an error for Chinese search:\r\n\r\n```\r\nUncaught ReferenceError: ChineseStemmer is not defined\r\n    at language_data.js:13:18Understand this error\r\nsearchtools.js:304 Uncaught ReferenceError: Stemmer is not defined\r\n    at Object._parseQuery (searchtools.js:304:21)\r\n    at Object.query (searchtools.js:462:16)\r\n    at Object.performSearch (searchtools.js:298:35)\r\n    at HTMLDocument.init (searchtools.js:238:23)\r\n```\r\n\r\nThat was because `build/_static/language_data.js` ended with `window.Stemmer = ChineseStemmer;` but that doesn't exist because Chinese search uses English stemmer:\r\n\r\nhttps://github.com/sphinx-doc/sphinx/blob/cc7c6f435ad37bb12264f8118c8461b230e6830c/sphinx/search/zh.py#L43\r\n\r\n\r\nThis fixes it to use `window.Stemmer = EnglishStemmer;`.\r\n\r\n\r\n## References\r\n\r\n<!--\r\nPlease add any relevant links here, especially including any \r\nGitHub issues or Pull Requests that this PR",
+      "changed_file_count": 3,
+      "deletions": 1,
+      "head_ref_oid": "3ed0af4a0d39c6f91c72c6c88213e3e691adb352",
+      "merged_at": "2026-07-22T15:23:07Z",
+      "number": 14416,
+      "repo": "sphinx-doc/sphinx",
+      "source_files": [
+        "sphinx/search/__init__.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_search.py"
+      ],
+      "title": "Derive JS class name from stemmer filename to fix Chinese search",
+      "url": "https://github.com/sphinx-doc/sphinx/pull/14416"
+    },
+    {
+      "additions": 338,
+      "base_ref_oid": "3c85411fd06a1c3026f7991818312e5358ef52e5",
+      "body_excerpt": "## Purpose\r\n\r\nThis inhibits breaking in rows with vertically merged cells per stack exchange [1].  Tested against longtable.\r\n\r\n[1] https://tex.stackexchange.com/questions/52100/%20longtable-multirow-problem-with-cline-and-nopagebreak#answer-52101\r\n\r\n## Discussion\r\n\r\nI'm not sure of a good way of automating that the final output doesn't go into the margins as Sphinx doesn't build the PDF output from the .tex files during test, nor inspect these.  I also don't know if this is the correct approach for this, but I did add a test case demonstrating this along with the expected .tex snippet.  The colorrows and regular version is required to exercise all of the paths in the PDF output from within `sphinxlatextables.sty`, but not in the .tex output itself.\r\n\r\nWithout this fix you get this in the PDF output from the test case example:\r\n\r\n<img width=\"451\" height=\"835\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a99c4f0d-b15c-4e42-8c50-35097b23c48b\" />\r\n\r\nAnd with the fix, you get this:\r\n\r\n<img width=\"449\" height=\"907\" alt=\"image\" src=\"https://github.com/user-attachments/assets/8b2cbb2d-9d9d-471d-a167-e87b063f6c4f\" />\r\n\r\nNotably, the problematic multiline section was moved, but a regular pagebreak still occurs during non-merged vertical cells.",
+      "changed_file_count": 9,
+      "deletions": 12,
+      "head_ref_oid": "3a234f5cb16f74eed3e675e60bb375771488ae29",
+      "merged_at": "2025-12-30T22:46:12Z",
+      "number": 14227,
+      "repo": "sphinx-doc/sphinx",
+      "source_files": [
+        "sphinx/writers/latex.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_builders/test_build_latex.py"
+      ],
+      "title": "LaTeX: Inhibit breaks for rows with merged vertical cells",
+      "url": "https://github.com/sphinx-doc/sphinx/pull/14227"
+    },
+    {
+      "additions": 130,
+      "base_ref_oid": "3c85411fd06a1c3026f7991818312e5358ef52e5",
+      "body_excerpt": "<!--\r\nThank you for creating this pull request and for spending time to help Sphinx!\r\nOur contributors' guide can be found online: https://www.sphinx-doc.org/en/master/internals/contributing.html\r\nAsk any questions at https://github.com/sphinx-doc/sphinx/discussions\r\n-->\r\n\r\n\r\n## Purpose\r\n\r\n<!--\r\nA description of the purpose of this pull request.\r\nEnsure that all relevant information is included for reviewers,\r\nincluding any environment-specific details.\r\n\r\n* If you plan to add tests or documentation after opening this PR,\r\n  please note it here.\r\n* For user-visible changes, remember to add an entry to CHANGES.rst.\r\n* Please add your name to AUTHORS.rst if you haven't already!\r\n-->\r\n\r\nAdd `app.add_static_dir()` API so extensions can easily bundle static files (JS, CSS, images, etc) without manual file copying workarounds, as it is currently confusing and underdocumented (see #11173, #5434).\r\n\r\n```python\r\nfrom pathlib import Path\r\n\r\ndef setup(app):\r\n    # All files in this directory are copied to _build/html/_static/,\r\n    # preserving the subdirectory structure\r\n    app.add_static_dir(Path(__file__).parent / 'static')\r\n\r\n    # Add JavaScript and CSS files to HTML pages,\r\n    # the paths are relative to _static/\r\n    app.add_js_file('js/my_extension.js')\r\n    app.add_css_file('css/my_extension.css')\r\n```\r\n\r\nExtensions could copy files themselves using `shutil.copytree()`, but `add_static_dir()` provides:\r\n\r\n- Allows extensions to override theme defaults while users can still override extension files, due to the fact that files are copied after theme static files but before `h",
+      "changed_file_count": 13,
+      "deletions": 1,
+      "head_ref_oid": "d8540dff02febd861f781f1a2ef321d8a8ef3428",
+      "merged_at": "2025-12-31T14:58:12Z",
+      "number": 14219,
+      "repo": "sphinx-doc/sphinx",
+      "source_files": [
+        "sphinx/application.py",
+        "sphinx/builders/html/__init__.py",
+        "sphinx/registry.py",
+        "sphinx/util/fileutil.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/roots/test-ext_static_dir/conf.py",
+        "tests/roots/test-ext_static_dir/staticdirext/__init__.py",
+        "tests/test_builders/test_build_html_assets.py"
+      ],
+      "title": "Add app.add_static_dir() API for copying extension static files",
+      "url": "https://github.com/sphinx-doc/sphinx/pull/14219"
+    },
+    {
+      "additions": 376,
+      "base_ref_oid": "9257a4f1bb88d562bb22ed6ca8657bf7838c4b56",
+      "body_excerpt": "",
+      "changed_file_count": 12,
+      "deletions": 249,
+      "head_ref_oid": "693f58ed36e839cabc4d17a4d99d5da702e730c6",
+      "merged_at": "2025-12-15T19:55:28Z",
+      "number": 14182,
+      "repo": "sphinx-doc/sphinx",
+      "source_files": [
+        "sphinx/ext/autodoc/_event_listeners.py",
+        "sphinx/ext/doctest.py",
+        "sphinx/util/i18n.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_domains/test_domain_rst.py",
+        "tests/test_ext_autodoc/test_ext_autodoc_events.py",
+        "tests/test_extensions/test_ext_doctest.py",
+        "tests/test_intl/test_intl.py",
+        "tests/test_util/test_util_i18n.py",
+        "tests/test_util/test_util_inspect.py",
+        "tests/test_util/test_util_logging.py",
+        "tests/test_util/test_util_nodes.py"
+      ],
+      "title": "Remove some entries from the mypy whitelist",
+      "url": "https://github.com/sphinx-doc/sphinx/pull/14182"
+    },
+    {
+      "additions": 17,
+      "base_ref_oid": "71cc5d8479c5011dc2596e827f538d6840c34901",
+      "body_excerpt": "<!--\r\nThank you for creating this pull request and for spending time to help Sphinx!\r\nOur contributors' guide can be found online: https://www.sphinx-doc.org/en/master/internals/contributing.html\r\nAsk any questions at https://github.com/sphinx-doc/sphinx/discussions\r\n-->\r\n\r\n\r\n## Purpose\r\n\r\ni18n: False positive build warnings. Ignore order of references.\r\n\r\n<!--\r\nA description of the purpose of this pull request.\r\nEnsure that all relevant information is included for reviewers,\r\nincluding any environment-specific details.\r\n\r\n* If you plan to add tests or documentation after opening this PR,\r\n  please note it here.\r\n* For user-visible changes, remember to add an entry to CHANGES.rst.\r\n* Please add your name to AUTHORS.rst if you haven't already!\r\n-->\r\n\r\n\r\n## References\r\n\r\n<!--\r\nPlease add any relevant links here, especially including any \r\nGitHub issues or Pull Requests that this PR would resolve.\r\nThis helps to ensure that reviewers have context from\r\nprevious discussions or decisions.\r\n-->\r\n\r\n- #14162\r\n",
+      "changed_file_count": 4,
+      "deletions": 12,
+      "head_ref_oid": "e2f98d3fe34259f61363556e96dee1be998a9650",
+      "merged_at": "2025-12-15T16:19:50Z",
+      "number": 14172,
+      "repo": "sphinx-doc/sphinx",
+      "source_files": [
+        "sphinx/transforms/i18n.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_intl/test_intl.py"
+      ],
+      "title": "Always ignore order in ``_NodeUpdater.compare_references()``",
+      "url": "https://github.com/sphinx-doc/sphinx/pull/14172"
+    },
+    {
+      "additions": 99,
+      "base_ref_oid": "f666208d78296b93781227744b6608df82a63b51",
+      "body_excerpt": "\r\n\r\n## Purpose\r\n\r\n<!--\r\nA description of the purpose of this pull request.\r\nEnsure that all relevant information is included for reviewers,\r\nincluding any environment-specific details.\r\n\r\n* If you plan to add tests or documentation after opening this PR,\r\n  please note it here.\r\n* For user-visible changes, remember to add an entry to CHANGES.rst.\r\n* Please add your name to AUTHORS.rst if you haven't already!\r\n-->\r\n\r\nReduce false positive `i18n.inconsistent_references` warnings for `pending_xref` nodes.\r\n\r\nFor `pending_xref`, compare by `reftarget` only (not full `rawsource`) and ignore order. This allows translators to:\r\n- Reorder references for natural sentence flow\r\n- Translate display text\r\n\r\nOther reference types retain the original behavior.\r\n\r\n## References\r\n\r\n<!--\r\nPlease add any relevant links here, especially including any \r\nGitHub issues or Pull Requests that this PR would resolve.\r\nThis helps to ensure that reviewers have context from\r\nprevious discussions or decisions.\r\n-->\r\n\r\n- Fixes #14143\r\n- Related: #14001 (introduced the stricter checking in Sphinx v9)\r\n",
+      "changed_file_count": 6,
+      "deletions": 5,
+      "head_ref_oid": "91d6c41e41047f38dbed701ba3b365f6f78ce207",
+      "merged_at": "2025-12-04T07:24:14Z",
+      "number": 14144,
+      "repo": "sphinx-doc/sphinx",
+      "source_files": [
+        "sphinx/transforms/i18n.py"
+      ],
+      "split": "test",
+      "test_files": [
+        "tests/test_intl/test_intl.py"
+      ],
+      "title": "Allow reordered refs and translated display text in pending_xref",
+      "url": "https://github.com/sphinx-doc/sphinx/pull/14144"
+    }
+  ],
+  "repo_count": 11,
+  "suite": "prospective-public-issue-verifier-benchmark"
+}

@@ -1,0 +1,246 @@
+{
+  "cross_repo_issues": 5,
+  "cross_repo_stress": {
+    "cautious_point_buys": false,
+    "cautious_point_missed_branch": 0.1,
+    "checks": 25,
+    "credal_buys": true,
+    "credal_effective_missed_branch": 0.7619047619047619,
+    "point_buys": false,
+    "point_missed_branch": 0.047619047619047616,
+    "policies": [
+      {
+        "mean_cost": 0.14,
+        "policy": "E_visible_simple",
+        "query_rate": 0.0,
+        "success_rate": 0.48
+      },
+      {
+        "mean_cost": 0.14,
+        "policy": "B_high_confidence_point",
+        "query_rate": 0.0,
+        "success_rate": 0.48
+      },
+      {
+        "mean_cost": 0.19,
+        "policy": "D_credal_stress",
+        "query_rate": 1.0,
+        "success_rate": 1.0
+      },
+      {
+        "mean_cost": 0.14,
+        "policy": "G_cautious_point",
+        "query_rate": 0.0,
+        "success_rate": 0.48
+      }
+    ],
+    "repos": 4,
+    "simple_successes": 12,
+    "source_successes": 25,
+    "test_simple_cost": 0.14,
+    "test_source_cost": 0.19,
+    "train_checks": 21,
+    "train_incremental_cost": 0.09999999999999998,
+    "train_missed_branch": 0.047619047619047616
+  },
+  "finite_sample_confidence_transfer": {
+    "credal_buys": true,
+    "credal_gain": 0.52,
+    "credal_success_rate": 1.0,
+    "incremental_cost": 0.09999999999999998,
+    "plugin_buys": false,
+    "plugin_mass": 0.047619047619047616,
+    "plugin_success_rate": 0.48,
+    "test_suite": "cross_repo",
+    "train_checks": 21,
+    "train_rescues": 1,
+    "train_suite": "packaging",
+    "wilson_upper": 0.1878210659801764
+  },
+  "hidden_checks": 46,
+  "issues": 12,
+  "manifest_sha256": "9ef56d15697b9677116d2c02b2593f253e8ee01bd9503268c4b594688d59e8c1",
+  "packaging_issues": 7,
+  "packaging_to_cross": {
+    "credal_buys": true,
+    "credal_effective_missed_branch": 0.7619047619047619,
+    "credal_mean_cost": 0.19,
+    "credal_success_rate": 1.0,
+    "finite_sample_credal_buys": true,
+    "finite_sample_credal_mean_cost": 0.19,
+    "finite_sample_credal_success_rate": 1.0,
+    "finite_sample_upper_branch": 0.1878210659801764,
+    "point_buys": false,
+    "point_mean_cost": 0.14,
+    "point_success_rate": 0.48,
+    "test_checks": 25,
+    "test_simple_success_rate": 0.48,
+    "test_source_success_rate": 1.0,
+    "test_suite": "cross_repo",
+    "train_checks": 21,
+    "train_incremental_cost": 0.09999999999999998,
+    "train_missed_branch": 0.047619047619047616,
+    "train_rescues": 1,
+    "train_suite": "packaging"
+  },
+  "records": [
+    {
+      "candidate_policy": "non-official generated source-pattern candidates",
+      "hidden_checks": [
+        "click_2192_executable_file_with_readable_false",
+        "click_2192_existing_file_default_still_works",
+        "click_2192_missing_path_still_rejected",
+        "click_2192_rejects_non_executable",
+        "click_2192_resolve_path_still_rejects_non_executable"
+      ],
+      "issue_id": "click_2192_executable_path_flag",
+      "issue_url": "https://github.com/pallets/click/issues/2192",
+      "repo": "pallets/click",
+      "suite": "cross_repo"
+    },
+    {
+      "candidate_policy": "non-official generated source-pattern candidates",
+      "hidden_checks": [
+        "jsonpatch_137_nested_dict_value_reuse",
+        "jsonpatch_137_nested_list_value_reuse",
+        "jsonpatch_137_nested_object_in_list_not_reused",
+        "jsonpatch_137_scalar_add_still_works",
+        "jsonpatch_137_two_operation_values_independent"
+      ],
+      "issue_id": "jsonpatch_137_mutable_patch_value",
+      "issue_url": "https://github.com/stefankoegl/python-json-patch/issues/137",
+      "repo": "stefankoegl/python-json-patch",
+      "suite": "cross_repo"
+    },
+    {
+      "candidate_policy": "non-official generated source-pattern candidates",
+      "hidden_checks": [
+        "jsonpointer_69_mapping_member_preserved",
+        "jsonpointer_69_mapping_numeric_names_preserved",
+        "jsonpointer_69_rejects_leading_zero_indices",
+        "jsonpointer_69_rejects_zero_padded_large_indices",
+        "jsonpointer_69_valid_indices_preserved"
+      ],
+      "issue_id": "jsonpointer_69_leading_zero_array_index",
+      "issue_url": "https://github.com/stefankoegl/python-json-pointer/pull/69",
+      "repo": "stefankoegl/python-json-pointer",
+      "suite": "cross_repo"
+    },
+    {
+      "candidate_policy": "non-official generated source-pattern candidates",
+      "hidden_checks": [
+        "jsonpointer_70_array_index_preserved",
+        "jsonpointer_70_jsonpointer_object_rejects_nonzero_string_index",
+        "jsonpointer_70_rejects_alpha_string_token",
+        "jsonpointer_70_rejects_other_string_tokens",
+        "jsonpointer_70_rejects_zero_string_index"
+      ],
+      "issue_id": "jsonpointer_70_string_not_indexable",
+      "issue_url": "https://github.com/stefankoegl/python-json-pointer/issues/70",
+      "repo": "stefankoegl/python-json-pointer",
+      "suite": "cross_repo"
+    },
+    {
+      "candidate_policy": "non-official generated source-pattern candidates",
+      "hidden_checks": [
+        "pyyaml_376_capitalized_yes_no_are_strings",
+        "pyyaml_376_on_off_are_strings",
+        "pyyaml_376_on_off_mapping_keys_are_strings",
+        "pyyaml_376_true_false_still_booleans",
+        "pyyaml_376_yes_no_are_strings"
+      ],
+      "issue_id": "pyyaml_bool_resolver_yaml12_strings",
+      "issue_url": "https://github.com/yaml/pyyaml/issues/376",
+      "repo": "yaml/pyyaml",
+      "suite": "cross_repo"
+    },
+    {
+      "candidate_policy": "source-pattern generated candidates exclude official PR diffs",
+      "hidden_checks": [
+        "packaging_1332_malformed_specifier_is_invalid_requirement",
+        "packaging_1332_url_requirement_still_parses",
+        "packaging_1332_valid_requirement_still_parses"
+      ],
+      "issue_id": "packaging_1332_invalid_requirement_wrapper",
+      "issue_url": "https://github.com/pypa/packaging/pull/1332",
+      "repo": "pypa/packaging",
+      "suite": "packaging"
+    },
+    {
+      "candidate_policy": "source-pattern generated candidates exclude official PR diffs",
+      "hidden_checks": [
+        "packaging_1341_rejects_crlf_wheel_name",
+        "packaging_1341_rejects_newline_wheel_name",
+        "packaging_1341_valid_wheel_still_parses"
+      ],
+      "issue_id": "packaging_1341_wheel_name_newline",
+      "issue_url": "https://github.com/pypa/packaging/pull/1341",
+      "repo": "pypa/packaging",
+      "suite": "packaging"
+    },
+    {
+      "candidate_policy": "source-pattern generated candidates exclude official PR diffs",
+      "hidden_checks": [
+        "packaging_1345_horizontal_whitespace_still_allowed",
+        "packaging_1345_marker_rejects_newline",
+        "packaging_1345_requirement_rejects_newline"
+      ],
+      "issue_id": "packaging_1345_strict_end_anchor",
+      "issue_url": "https://github.com/pypa/packaging/pull/1345",
+      "repo": "pypa/packaging",
+      "suite": "packaging"
+    },
+    {
+      "candidate_policy": "source-pattern generated candidates exclude official PR diffs",
+      "hidden_checks": [
+        "packaging_1360_compatible_empty_platforms",
+        "packaging_1360_cpython_empty_platforms",
+        "packaging_1360_generic_empty_platforms"
+      ],
+      "issue_id": "packaging_1360_empty_platform_iterables",
+      "issue_url": "https://github.com/pypa/packaging/pull/1360",
+      "repo": "pypa/packaging",
+      "suite": "packaging"
+    },
+    {
+      "candidate_policy": "source-pattern generated candidates exclude official PR diffs",
+      "hidden_checks": [
+        "packaging_1384_post_uses_ascii_scope",
+        "packaging_1384_preview_uses_ascii_scope",
+        "packaging_1384_valid_compatible_specifier_still_parses"
+      ],
+      "issue_id": "packaging_1384_ascii_specifier_words",
+      "issue_url": "https://github.com/pypa/packaging/pull/1384",
+      "repo": "pypa/packaging",
+      "suite": "packaging"
+    },
+    {
+      "candidate_policy": "source-pattern generated candidates exclude official PR diffs",
+      "hidden_checks": [
+        "packaging_777_iterable_membership",
+        "packaging_777_iterable_set_equivalence",
+        "packaging_777_string_constructor_still_works"
+      ],
+      "issue_id": "packaging_777_iterable_specifiers",
+      "issue_url": "https://github.com/pypa/packaging/issues/775",
+      "repo": "pypa/packaging",
+      "suite": "packaging"
+    },
+    {
+      "candidate_policy": "source-pattern generated candidates exclude official PR diffs",
+      "hidden_checks": [
+        "packaging_788_comparison_contains",
+        "packaging_788_prerelease_property",
+        "packaging_788_specifier_filter"
+      ],
+      "issue_id": "packaging_788_prerelease",
+      "issue_url": "https://github.com/pypa/packaging/issues/788",
+      "repo": "pypa/packaging",
+      "suite": "packaging"
+    }
+  ],
+  "repos": 5,
+  "scope": "manifest-locked replay audit over development-selected public-history fixtures",
+  "simple_successes": 32,
+  "source_pattern_successes": 46
+}
