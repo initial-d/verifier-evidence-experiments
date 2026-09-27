@@ -36,6 +36,15 @@ python3 -m tests.run_smoke
 The smoke check verifies that the committed cached results contain the expected
 main quantities and that no paper PDF is present in the repository.
 
+Equivalent Make target:
+
+```bash
+make check
+```
+
+This is the safest first command for a fresh clone. It is fully offline and
+does not rewrite cached result files.
+
 ## Reproducing Cached Tables
 
 The deterministic studies can be regenerated with:
@@ -49,9 +58,14 @@ python3 -m experiments.run_public_history_prior_stress
 python3 -m experiments.generate_locked_public_history_replay
 ```
 
+These commands rewrite cached JSON and LaTeX table artifacts under
+`experiments/results/`. Run them from a clean working tree if you want to compare
+regenerated outputs against the committed release artifacts.
+
 The hosted-model and public-source scripts can also be rerun, but external
-service behavior may change over time. The cached JSON files are included so
-that the reported numerical summaries remain inspectable.
+service behavior, repository state, and issue availability may change over time.
+The cached JSON files are included so that the reported numerical summaries
+remain inspectable even when live services drift.
 
 ## Optional Hosted-Model Reruns
 
@@ -65,4 +79,3 @@ python3 -m experiments.run_llm_shared_misunderstanding --live --model your-model
 
 Alternatively, pass `--auth-source path/to/key.txt`. Do not commit credentials
 or private cache files.
-

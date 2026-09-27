@@ -1,6 +1,8 @@
-.PHONY: smoke controlled executable public-history locked-replay
+.PHONY: check smoke controlled executable public-history locked-replay
 
 PYTHON ?= python3
+
+check: smoke
 
 smoke:
 	$(PYTHON) -m tests.run_smoke
@@ -18,4 +20,3 @@ public-history:
 
 locked-replay: public-history
 	$(PYTHON) -m experiments.generate_locked_public_history_replay
-
