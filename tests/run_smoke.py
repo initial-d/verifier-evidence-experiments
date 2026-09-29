@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -17,6 +18,11 @@ def require(condition: bool, message: str) -> None:
 
 def load(name: str) -> dict:
     return json.loads((RESULTS / name).read_text(encoding="utf-8"))
+
+
+def manifest_hash(records: list[dict]) -> str:
+    payload = json.dumps(records, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def main() -> None:
@@ -39,9 +45,17 @@ def main() -> None:
 
     prospective = load("prospective_issue_benchmark.json")
     require(prospective["summary"]["issue_count"] == 59, "prospective benchmark issue count changed")
+    require(
+        prospective["manifest"]["manifest_sha256"] == manifest_hash(prospective["manifest"]["records"]),
+        "prospective benchmark manifest hash changed",
+    )
 
     locked = load("locked_public_history_replay.json")
     require(locked["issues"] == 12, "locked public-history issue count changed")
+    require(
+        locked["manifest_sha256"] == manifest_hash(locked["records"]),
+        "locked public-history manifest hash changed",
+    )
 
     print("artifact smoke check passed")
 
