@@ -20,6 +20,10 @@ def load(name: str) -> dict:
     return json.loads((RESULTS / name).read_text(encoding="utf-8"))
 
 
+def load_text(name: str) -> str:
+    return (RESULTS / name).read_text(encoding="utf-8")
+
+
 def manifest_hash(records: list[dict]) -> str:
     payload = json.dumps(records, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
@@ -55,6 +59,11 @@ def main() -> None:
     require(
         locked["manifest_sha256"] == manifest_hash(locked["records"]),
         "locked public-history manifest hash changed",
+    )
+    locked_table = load_text("locked_public_history_replay_table.tex")
+    require(
+        locked["manifest_sha256"][:12] in locked_table,
+        "locked public-history table does not include the manifest hash prefix",
     )
 
     print("artifact smoke check passed")
